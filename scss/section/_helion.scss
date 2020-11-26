@@ -2,13 +2,15 @@
   background-image: url("..//../img/topslide1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   width: 100%;
+  position: relative;
 }
 .helion__capital-wrap {
   position: absolute;
-  left: 300px;
-  bottom: 300px;
+  left: 350px;
+  bottom: 200px;
+
   .helion__title {
     font-size: 64px;
     line-height: 78px;
@@ -27,18 +29,30 @@
 .catigori__finances-list {
   position: absolute;
   display: flex;
-  border: 2px solid red;
-  max-width: 1024px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
   width: 100%;
-  bottom: 70px;
+  left: 500px;
+  bottom: -100px;
   background-color: white;
-  padding: 40px 36px;
-  
- .catigori__finances-item {
-     display: flex;
-     align-items: center;
- }
- .catigori__finances-img {
-     margin-right: 30px;
- }
+  padding: 40px 0px 40px 36px;
+
+  .catigori__finances-item {
+    display: flex;
+    align-items: center;
+  }
+  .catigori__finances-img {
+    margin-right: 30px;
+  }
+  .catigori__finances-title {
+    max-width: 150px;
+  }
+  .title {
+    max-width: 110px;
+  }
+  .title-two {
+    text-decoration-line: underline;
+    max-width: 110px;
+  }
 }

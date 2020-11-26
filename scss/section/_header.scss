@@ -1,52 +1,92 @@
 .header {
-    background: #43191F;
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 19px;
-}.header__logotip {
-    margin-right: 56px;
-
+  background: #43191f;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 19px;
+}
+.header__logotip {
+  margin-right: 56px;
 }
 .header__information {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .info__list {
-    display: flex;
-    list-style: none;
-    
-    &-item {
-        margin-right: 28px;
-    }
-    &-link {
-        text-decoration: none;
-        color: #F9F6F2;
-    }
+  display: flex;
+  list-style: none;
+
+  &-item {
+    margin-right: 28px;
+  }
+  &-link {
+    text-decoration: none;
+    color: #f9f6f2;
+  }
+  .item {
+    margin-right: 127px;
+  }
 }
 .authorizations {
-    margin-right: 41px;
-    &__link {
-        margin-right: 22px;
-    }
+  margin-right: 41px;
+  &__link {
+    margin-right: 22px;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .enter {
+    color: #d09e70;
+  }
 }
 .header__call {
-    display: flex;
-    &-button {
-        margin-right: 10px;
-    }
+  display: flex;
+  &-button {
+    margin-right: 10px;
+    color: #d09e70;
+    background: #300f14;
+    border: 1px solid #300f14;
+    padding: 14px 24px 9px 20px;
+  }
 }
 .changing__language {
-    display: grid;
+  display: grid;
+  &-button {
+    background: transparent;
+    border: 1px solid #43191f;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+  }
+  .ru {
+    color: #e3a873;
+  }
+  .en {
+    color: #860d1f;
+  }
 }
 
 .navigation__list {
+  display: flex;
+  &-item {
     display: flex;
-    &-item {
-        display: flex;
-        margin-right: 46px;
-    }
-    &-title {
-        margin-right: 36px;
+    margin-right: 46px;
+  }
+  &-title {
+    margin-right: 13px;
+    color: #f9f6f2;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &-button {
+    background: transparent;
+    border: 1px solid #43191f;
+  }
+}
+.navigation__list-item:first-child {
+    .navigation__list-title {
+        color: #e3a873;
     }
 }

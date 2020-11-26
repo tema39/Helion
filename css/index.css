@@ -1,5 +1,5 @@
 .header {
-  background: #43191F;
+  background: #43191f;
   display: flex;
   justify-content: center;
   padding-top: 15px;
@@ -19,20 +19,43 @@
     margin-right: 28px; }
   .info__list-link {
     text-decoration: none;
-    color: #F9F6F2; }
+    color: #f9f6f2; }
+  .info__list .item {
+    margin-right: 127px; }
 
 .authorizations {
   margin-right: 41px; }
   .authorizations__link {
-    margin-right: 22px; }
+    margin-right: 22px;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: normal; }
+  .authorizations .enter {
+    color: #d09e70; }
 
 .header__call {
   display: flex; }
   .header__call-button {
-    margin-right: 10px; }
+    margin-right: 10px;
+    color: #d09e70;
+    background: #300f14;
+    border: 1px solid #300f14;
+    padding: 14px 24px 9px 20px; }
 
 .changing__language {
   display: grid; }
+  .changing__language-button {
+    background: transparent;
+    border: 1px solid #43191f;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold; }
+  .changing__language .ru {
+    color: #e3a873; }
+  .changing__language .en {
+    color: #860d1f; }
 
 .navigation__list {
   display: flex; }
@@ -40,19 +63,29 @@
     display: flex;
     margin-right: 46px; }
   .navigation__list-title {
-    margin-right: 36px; }
+    margin-right: 13px;
+    color: #f9f6f2;
+    font-size: 18px;
+    line-height: 21px; }
+  .navigation__list-button {
+    background: transparent;
+    border: 1px solid #43191f; }
+
+.navigation__list-item:first-child .navigation__list-title {
+  color: #e3a873; }
 
 .helion {
   background-image: url("..//../img/topslide1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  width: 100%; }
+  height: 600px;
+  width: 100%;
+  position: relative; }
 
 .helion__capital-wrap {
   position: absolute;
-  left: 300px;
-  bottom: 300px; }
+  left: 350px;
+  bottom: 200px; }
   .helion__capital-wrap .helion__title {
     font-size: 64px;
     line-height: 78px;
@@ -68,17 +101,29 @@
 .catigori__finances-list {
   position: absolute;
   display: flex;
-  border: 2px solid red;
-  max-width: 1024px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
   width: 100%;
-  bottom: 70px;
+  left: 500px;
+  bottom: -100px;
   background-color: white;
-  padding: 40px 36px; }
+  padding: 40px 0px 40px 36px; }
   .catigori__finances-list .catigori__finances-item {
     display: flex;
     align-items: center; }
   .catigori__finances-list .catigori__finances-img {
     margin-right: 30px; }
+  .catigori__finances-list .catigori__finances-title {
+    max-width: 150px; }
+  .catigori__finances-list .title {
+    max-width: 110px; }
+  .catigori__finances-list .title-two {
+    text-decoration-line: underline;
+    max-width: 110px; }
+
+.dividends__analytics {
+  background: #F9F6F2; }
 
 body {
   margin: 0px; }
