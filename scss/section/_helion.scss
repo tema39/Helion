@@ -1,0 +1,44 @@
+.helion {
+  background-image: url("..//../img/topslide1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.helion__capital-wrap {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+  .helion__title {
+    font-size: 64px;
+    line-height: 78px;
+    color: #f9f6f2;
+    max-width: 446px;
+    margin-bottom: 11px;
+  }
+  .helion__text {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+.catigori__finances-list {
+  position: absolute;
+  display: flex;
+  border: 2px solid red;
+  max-width: 1024px;
+  width: 100%;
+  bottom: 70px;
+  background-color: white;
+  padding: 40px 36px;
+  
+ .catigori__finances-item {
+     display: flex;
+     align-items: center;
+ }
+ .catigori__finances-img {
+     margin-right: 30px;
+ }
+}

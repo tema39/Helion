@@ -1,0 +1,52 @@
+.header {
+    background: #43191F;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 19px;
+}.header__logotip {
+    margin-right: 56px;
+
+}
+.header__information {
+    display: flex;
+    align-items: center;
+}
+.info__list {
+    display: flex;
+    list-style: none;
+    
+    &-item {
+        margin-right: 28px;
+    }
+    &-link {
+        text-decoration: none;
+        color: #F9F6F2;
+    }
+}
+.authorizations {
+    margin-right: 41px;
+    &__link {
+        margin-right: 22px;
+    }
+}
+.header__call {
+    display: flex;
+    &-button {
+        margin-right: 10px;
+    }
+}
+.changing__language {
+    display: grid;
+}
+
+.navigation__list {
+    display: flex;
+    &-item {
+        display: flex;
+        margin-right: 46px;
+    }
+    &-title {
+        margin-right: 36px;
+    }
+}
