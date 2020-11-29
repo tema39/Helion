@@ -1,0 +1,16 @@
+.financial__company {
+
+}
+.company__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 85px 0px 50px 0px;
+    &-item {
+        margin-right: 19px;
+    }
+    &-item:nth-child(5) {
+        margin-right: 0px;
+    }
+}

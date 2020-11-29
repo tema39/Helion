@@ -1,0 +1,114 @@
+.company__news {
+  background-color: #f9f6f2;
+}
+.company__news-container {
+  max-width: 1024px;
+  margin: auto;
+  padding-bottom: 60px;
+
+  .company__news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    .news__title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+    }
+    .news__link {
+      font-size: 14px;
+      line-height: 16px;
+      color: #43191f;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .news__list {
+    list-style: none;
+    display: flex;
+    margin-bottom: 70px;
+
+    .news__list-item {
+      display: flex;
+      margin-right: 44px;
+
+      .news__list-item:nth-child(2) {
+        margin-right: 0px;
+      }
+
+      .news__content-wrap {
+        background-color: white;
+        width: 310px;
+        padding: 10px 17px;
+        .news__content-title {
+          font-size: 17px;
+          line-height: 25px;
+          text-decoration-line: underline;
+          margin-bottom: 10px;
+          color: #43191f;
+        }
+        .news__content-text {
+          font-size: 12px;
+          line-height: 17px;
+          color: #000000;
+          margin-bottom: 19px;
+        }
+      }
+
+      .news__date-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .news__date {
+          font-size: 12px;
+          line-height: 20px;
+          color: #000000;
+        }
+        .news__link {
+          font-size: 12px;
+          line-height: 17px;
+          color: #cb9c71;
+        }
+      }
+    }
+  }
+
+  .banner__finances-wrap {
+    background-image: url("../../img/bitmap.png");
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 60px;
+    padding: 15px 15px;
+
+    .banner__title-buttons {
+      border: 1px solid white;
+      padding: 20px 0px 20px 22px;
+      height: 220px;
+
+      .banner__title {
+        font-size: 37px;
+        line-height: 43px;
+        width: 550px;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+      .banner__button {
+        font-size: 14px;
+        line-height: 14px;
+        color: #d09e70;
+        background: #ffffff;
+        border: 2px solid white;
+        max-width: 220px;
+        width: 100%;
+        padding: 18px 15px;
+        margin-right: 20px;
+      }
+      .banner__button-finances {
+          background: transparent;
+          color: #FFFFFF;
+      }
+    }
+  }
+}
