@@ -7,12 +7,24 @@
 .dividends__container {
   max-width: 970px;
   margin: 0px auto;
+  position: relative;
 
   .dividends__title {
     margin-bottom: 34px;
     font-size: 36px;
     line-height: 53px;
     color: #43191f;
+    font-family: Milio;
+  }
+  .dividends__title::before {
+    content: "";
+    position: absolute;
+    width: 580px;
+    height: 2px;
+    right: -40px;
+    top: 28px;
+
+    background-color: gainsboro;
   }
   .dividends__analytics-wrap {
     display: flex;
@@ -25,6 +37,7 @@
         line-height: 35px;
         color: #d09e70;
         margin-bottom: 46px;
+        font-family: Milio;
       }
       &-item {
         display: flex;
@@ -38,7 +51,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #000000;
-        font-weight: bold;
+        font-family: Helvetica, sans-serif;
       }
     }
     .analytics__list {
@@ -48,6 +61,7 @@
         line-height: 35px;
         color: #d09e70;
         margin-bottom: 46px;
+        font-family: Milio;
       }
       &-item {
         display: flex;
@@ -60,51 +74,81 @@
         font-size: 16px;
         line-height: 22px;
         color: #000000;
-        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
   }
-  .special__offer-wrap {
-    .special__offer-title {
-      font-size: 36px;
-      line-height: 51px;
-      color: #43191f;
-      margin-bottom: 48px;
+  .special__offer-contianer {
+    .special_offer-wrap {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+
+      .special__offer-title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 380px;
+        right: 110px;
+        top: 35px;
+        background-color: #DAB490;
+      }
+
+      .special__offer-title {
+        font-size: 36px;
+        line-height: 51px;
+        color: #43191f;
+        font-family: Milio;
+        margin-bottom: 48px;
+      }
+      .special__offer-link {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #43191F;
+        text-decoration: none;
+
+      }
     }
     .offer__list {
       list-style: none;
       display: flex;
-      
+
       .offer__list-item:first-child {
         padding: 30px 30px 23px 31px;
-    }
-    .offer__list-item:nth-child(2) {
-        border: 5px solid #E0E0E0;
+      }
+      .offer__list-item:nth-child(2) {
+        border: 5px solid #e0e0e0;
         padding: 25px 40px 23px 30px;
-    }
-    .offer__list-item:nth-child(3) {
-        border: 5px solid #E0E0E0;
+      }
+      .offer__list-item:nth-child(3) {
+        border: 5px solid #e0e0e0;
         padding: 25px 40px 23px 30px;
-    }
+      }
       &-item {
         margin-right: 30px;
         border: 10px solid #cb9c71;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
         max-width: 320px;
         width: 100%;
-        background: #FFFFFF;
+        background: #ffffff;
       }
       &-title {
         font-size: 24px;
         line-height: 35px;
         color: #632831;
         margin-bottom: 16px;
+        font-family: Milio;
       }
       &-text {
         max-width: 250px;
-        font-size: 14px;
-        line-height: 14.4px;
+        font-size: 12px;
+        line-height: 14px;
         margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #686868;
       }
       &-subtext {
         display: flex;
@@ -115,6 +159,7 @@
         font-size: 18px;
         line-height: 25px;
         color: #cb9c71;
+        font-family: Milio;
       }
       &-link {
         text-decoration: none;
@@ -122,8 +167,8 @@
         text-decoration-line: underline;
         color: #632831;
         line-height: 17px;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
   }
 }
-  

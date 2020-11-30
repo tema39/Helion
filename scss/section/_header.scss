@@ -16,16 +16,20 @@
 .info__list {
   display: flex;
   list-style: none;
-
+  margin-right: 128px;
   &-item {
     margin-right: 28px;
+    &:last-child {
+      margin: 0px;
+    }
   }
   &-link {
     text-decoration: none;
     color: #f9f6f2;
-  }
-  .item {
-    margin-right: 127px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
   }
 }
 .authorizations {
@@ -37,9 +41,12 @@
     line-height: 16px;
     font-style: normal;
     font-weight: normal;
-  }
-  .enter {
-    color: #d09e70;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:nth-child(2) {
+      color: #d09e70;
+      margin: 0px;
+    }
   }
 }
 .header__call {
@@ -71,15 +78,65 @@
 
 .navigation__list {
   display: flex;
+  margin-left: 18px;
   &-item {
+    position: relative;
     display: flex;
-    margin-right: 46px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 0px;
+      width: 2px;
+      height: 25px;
+      background-color:black;
+    }
+    &:first-child {
+      margin-right: 46px;
+      &::before {
+        right: -20px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 0px;
+        width: 2px;
+        height: 25px;
+        background-color: black;
+      }
+    }
+    &:nth-child(2) {
+      margin-right: 55px;
+      &::before {
+        right: -20px;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 55px;
+      &::before {
+        right: -18px;
+      }
+    }
+    &:nth-child(4) {
+      margin-right: 62px;
+      &::before {
+        right: -38px;
+      }
+    }
+    &:nth-child(5) {
+      &::before {
+        right: -24px;
+      }
+    }
   }
   &-title {
     margin-right: 13px;
     color: #f9f6f2;
     font-size: 18px;
     line-height: 21px;
+    font-family: Milio;
   }
   &-button {
     background: transparent;
@@ -87,7 +144,7 @@
   }
 }
 .navigation__list-item:first-child {
-    .navigation__list-title {
-        color: #e3a873;
-    }
+  .navigation__list-title {
+    color: #e3a873;
+  }
 }

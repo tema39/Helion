@@ -9,6 +9,7 @@
     line-height: 25px;
     color: #979797;
     margin-bottom: 28px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 .account__title-wrap {
@@ -16,11 +17,24 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  position: relative;
+
+  .account__title::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 520px;
+    right: 180px;
+    top: 25px;
+    background-color: #DAB490;
+
+  }
 
   .account__title {
     font-size: 36px;
     line-height: 51px;
     color: #43191f;
+    font-family: Milio;
   }
   .account__link {
     text-decoration: none;
@@ -28,6 +42,7 @@
     line-height: 14px;
     letter-spacing: 0.05em;
     color: #43191f;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 .trading__style-container {
@@ -67,11 +82,13 @@
         font-size: 36px;
         line-height: 51px;
         color: #ffffff;
+        font-family: Milio;
       }
       .score__title-description {
         font-size: 14px;
         line-height: 17px;
         color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
     .score__item-img {
@@ -79,15 +96,34 @@
       z-index: 3;
     }
     .list__item-score {
-      padding-left: 32px;
+      padding: 0px 20px;
       text-align: left;
       margin-bottom: 27px;
-      list-style: square;
+      list-style: none;
 
+      .item::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        left: 11px;
+        top: 17px;
+        background-color: #D09E70;
+      }
       .item {
         font-size: 14px;
         line-height: 41px;
         color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        border-top: 2px solid #DADADA;
+        padding-left: 26px;
+      }
+      .item:first-child {
+        border-top: 2px solid #DADADA;
+      }
+      .item:last-child {
+        border-bottom: 2px solid #DADADA;
       }
       }
      
@@ -96,6 +132,7 @@
       margin-bottom: 20px;
       font-size: 16px;
       line-height: 16px;
+      font-family: Arial, Helvetica, sans-serif;
       letter-spacing: 0.05em;
       min-width: 280px;
       padding: 19px 50px;
@@ -132,6 +169,7 @@
       min-width: 280px;
       padding: 19px 50px;
       background: #D09E70;
+      font-family: Arial, Helvetica, sans-serif;
       color: #FFFFFF;
     }
   }
@@ -165,6 +203,7 @@
       padding: 19px 50px;
       background: white;
       color: #72303A;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
 

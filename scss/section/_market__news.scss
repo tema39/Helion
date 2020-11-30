@@ -12,11 +12,23 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    position: relative;
 
     .markit__title {
       font-size: 36px;
       line-height: 51px;
       color: #43191f;
+      font-family: Milio;
+    }
+    .markit__title::before {
+      content: "";
+      position: absolute;
+      width: 580px;
+      height: 2px;
+      right: 160px;
+      top: 25px;
+      background-color: #D09E70;
+
     }
     .market__link {
       font-size: 14px;
@@ -24,6 +36,7 @@
       letter-spacing: 0.05em;
       color: #43191F;
       text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
   .market__list {
@@ -32,9 +45,21 @@
       display: flex;
       margin-bottom: 50px;
 
+      .market__list-item::before {
+        content: "";
+        position: absolute;
+        width: 407px;
+        height: 2px;
+        right: 0px;
+        top: 30px;
+        background-color:#E9E8E8;
+      }
+
       .market__list-item {
         display: flex;
         margin-right: 44px;
+        position: relative;
+
 
         .market__item-icon {
           margin-right: 16px;
@@ -50,6 +75,7 @@
             font-size: 18px;
             line-height: 26px;
             color: #43191f;
+            font-family: Milio;
           }
           .color {
             color: #d09e70;
@@ -58,12 +84,14 @@
           .market__content-text {
             font-size: 12px;
             line-height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
           }
         }
         .market__content-subtext {
           width: 380px;
           font-size: 12px;
           line-height: 14px;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
     }

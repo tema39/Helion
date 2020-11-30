@@ -7,20 +7,26 @@
 @import "./section/_company__news.scss";
 @import "./section/_financial__company.scss";
 @import "./section/_footer.scss";
+@import "./fonts/_fonts.scss";
 
 body {
-    margin: 0px;
+  margin: 0px;
+  font-family: "Millo","Helvetica" ,sans-serif;
 }
 p {
-    margin: 0px;
+  margin: 0px;
 }
 ul {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
-h1,h2,h3,h4,h5 {
-    margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

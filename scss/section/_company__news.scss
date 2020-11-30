@@ -11,17 +11,30 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 45px;
+    position: relative;
 
+    .news__title::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 2px;
+      background-color: #d09e70;
+      right: 160px;
+      top: 27px;
+    }
     .news__title {
       font-size: 36px;
       line-height: 51px;
       color: #43191f;
+      font-family: Milio;
     }
     .news__link {
       font-size: 14px;
       line-height: 16px;
       color: #43191f;
       letter-spacing: 0.05em;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
 
@@ -30,30 +43,31 @@
     display: flex;
     margin-bottom: 70px;
 
+    .news__list-item:last-child {
+      margin-right: 0px;
+    }
     .news__list-item {
       display: flex;
       margin-right: 44px;
 
-      .news__list-item:nth-child(2) {
-        margin-right: 0px;
-      }
-
       .news__content-wrap {
         background-color: white;
         width: 310px;
-        padding: 10px 17px;
+        padding: 0px 10px 0px 10px;
         .news__content-title {
           font-size: 17px;
           line-height: 25px;
           text-decoration-line: underline;
-          margin-bottom: 10px;
+          margin-bottom: 6px;
           color: #43191f;
+          font-family: Milio;
         }
         .news__content-text {
           font-size: 12px;
           line-height: 17px;
           color: #000000;
-          margin-bottom: 19px;
+          margin-bottom: 13px;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
 
@@ -65,11 +79,13 @@
           font-size: 12px;
           line-height: 20px;
           color: #000000;
+          font-family: Arial, Helvetica, sans-serif;
         }
         .news__link {
           font-size: 12px;
           line-height: 17px;
           color: #cb9c71;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
     }
@@ -93,6 +109,7 @@
         width: 550px;
         margin-bottom: 30px;
         color: #ffffff;
+        font-family: Milio;
       }
       .banner__button {
         font-size: 14px;
@@ -104,10 +121,11 @@
         width: 100%;
         padding: 18px 15px;
         margin-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
       }
       .banner__button-finances {
-          background: transparent;
-          color: #FFFFFF;
+        background: transparent;
+        color: #ffffff;
       }
     }
   }

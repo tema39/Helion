@@ -12,11 +12,22 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 56px;
+    position: relative;
 
     .training__title {
       font-size: 36px;
       line-height: 53px;
       color: #43191f;
+      font-family: Milio;
+    }
+    .training__title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 520px;
+      right: 150px;
+      top: 25px;
+      background-color: #d09e70;
     }
     .trading__link {
       text-align: right;
@@ -25,6 +36,7 @@
       letter-spacing: 0.05em;
       text-decoration: none;
       color: #43191f;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
   .trading__content-description {
@@ -35,6 +47,7 @@
       line-height: 22px;
       max-width: 500px;
       margin-right: 23px;
+      font-family: Arial, Helvetica, sans-serif;
     }
     .trading__content-img {
       position: relative;
@@ -50,6 +63,6 @@
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
-
