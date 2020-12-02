@@ -81,6 +81,8 @@
       background-color: black; }
     .navigation__list-item:first-child {
       margin-right: 46px; }
+      .navigation__list-item:first-child .navigation__list-title {
+        margin-right: 13px; }
       .navigation__list-item:first-child::before {
         right: -20px; }
       .navigation__list-item:first-child::after {
@@ -93,20 +95,25 @@
         background-color: black; }
     .navigation__list-item:nth-child(2) {
       margin-right: 55px; }
+      .navigation__list-item:nth-child(2) .navigation__list-title {
+        margin-right: 11px; }
       .navigation__list-item:nth-child(2)::before {
         right: -20px; }
     .navigation__list-item:nth-child(3) {
       margin-right: 55px; }
+      .navigation__list-item:nth-child(3) .navigation__list-title {
+        margin-right: 13px; }
       .navigation__list-item:nth-child(3)::before {
         right: -18px; }
     .navigation__list-item:nth-child(4) {
       margin-right: 62px; }
+      .navigation__list-item:nth-child(4) .navigation__list-title {
+        margin-right: 9px; }
       .navigation__list-item:nth-child(4)::before {
         right: -38px; }
     .navigation__list-item:nth-child(5)::before {
       right: -24px; }
   .navigation__list-title {
-    margin-right: 13px;
     color: #f9f6f2;
     font-size: 18px;
     line-height: 21px;
@@ -121,37 +128,38 @@
 .helion {
   background-image: url("..//../img/topslide1.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  width: 100%;
+  background-size: 100% 100%;
+  height: 466px;
   position: relative; }
 
 .helion__capital-wrap {
-  position: absolute;
-  left: 450px;
-  bottom: 200px; }
-  .helion__capital-wrap .helion__title {
-    font-size: 64px;
-    line-height: 78px;
-    color: #f9f6f2;
-    max-width: 446px;
-    margin-bottom: 11px;
-    font-family: Milio; }
-  .helion__capital-wrap .helion__text {
-    max-width: 500px;
-    font-size: 16px;
-    line-height: 22px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif; }
+  width: 961px;
+  padding-top: 160px;
+  margin: 0px auto; }
+
+.helion__title {
+  font-size: 64px;
+  line-height: 78px;
+  color: #f9f6f2;
+  max-width: 446px;
+  margin-bottom: 11px;
+  font-family: Milio; }
+
+.helion__text {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .catigori__finances-list {
   position: absolute;
   display: flex;
   border: 2px solid #ffffff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  max-width: 1024px;
-  width: 100%;
-  left: 450px;
+  left: 50%;
+  transform: translateX(-48%);
+  width: 1024px;
   justify-content: center;
   bottom: -100px;
   background-color: white;
@@ -217,7 +225,7 @@
   .dividends__container .dividends__title::before {
     content: "";
     position: absolute;
-    width: 580px;
+    width: 570px;
     height: 2px;
     right: -40px;
     top: 28px;
@@ -298,7 +306,8 @@
       padding: 25px 40px 23px 30px; }
     .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(3) {
       border: 5px solid #e0e0e0;
-      padding: 25px 40px 23px 30px; }
+      padding: 25px 40px 23px 30px;
+      margin: 0px; }
     .dividends__container .special__offer-contianer .offer__list-item {
       margin-right: 30px;
       border: 10px solid #cb9c71;
@@ -382,8 +391,9 @@
   display: flex;
   list-style: none;
   margin-bottom: 115px; }
+  .score__list .score__list-item:first-child {
+    margin-right: 31px; }
   .score__list .score__list-item {
-    margin-right: 31px;
     text-align: center;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); }
     .score__list .score__list-item .score__item-title {
@@ -484,7 +494,6 @@
     color: #FFFFFF; }
 
 .score__list-item:nth-child(3) {
-  margin-right: 31px;
   text-align: center; }
   .score__list-item:nth-child(3) .score__item-title {
     position: relative;
@@ -686,10 +695,26 @@
     .company__news-container .news__list .news__list-item {
       display: flex;
       margin-right: 44px; }
+      .company__news-container .news__list .news__list-item .news__img-wrap {
+        display: flex;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); }
+        .company__news-container .news__list .news__list-item .news__img-wrap .news__img {
+          width: 100%;
+          object-fit: cover; }
+      .company__news-container .news__list .news__list-item .news__content-wrap::before {
+        content: "";
+        position: absolute;
+        width: 290px;
+        right: 10px;
+        top: 115px;
+        height: 2px;
+        background-color: #EAEAEA; }
       .company__news-container .news__list .news__list-item .news__content-wrap {
         background-color: white;
         width: 310px;
-        padding: 0px 10px 0px 10px; }
+        padding: 10px 17px 10px 10px;
+        position: relative;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); }
         .company__news-container .news__list .news__list-item .news__content-wrap .news__content-title {
           font-size: 17px;
           line-height: 25px;
@@ -700,6 +725,7 @@
         .company__news-container .news__list .news__list-item .news__content-wrap .news__content-text {
           font-size: 12px;
           line-height: 17px;
+          width: 280px;
           color: #000000;
           margin-bottom: 13px;
           font-family: Arial, Helvetica, sans-serif; }
@@ -715,6 +741,7 @@
           font-size: 12px;
           line-height: 17px;
           color: #cb9c71;
+          text-decoration: none;
           font-family: Arial, Helvetica, sans-serif; }
   .company__news-container .banner__finances-wrap {
     background-image: url("../../img/bitmap.png");
@@ -844,7 +871,7 @@
 
 body {
   margin: 0px;
-  font-family: "Millo","Helvetica" ,sans-serif; }
+  font-family: "Millo", "Helvetica", sans-serif; }
 
 p {
   margin: 0px; }

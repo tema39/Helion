@@ -19,7 +19,7 @@
   .dividends__title::before {
     content: "";
     position: absolute;
-    width: 580px;
+    width: 570px;
     height: 2px;
     right: -40px;
     top: 28px;
@@ -126,6 +126,7 @@
       .offer__list-item:nth-child(3) {
         border: 5px solid #e0e0e0;
         padding: 25px 40px 23px 30px;
+        margin: 0px;
       }
       &-item {
         margin-right: 30px;

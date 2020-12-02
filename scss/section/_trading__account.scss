@@ -52,8 +52,11 @@
   display: flex;
   list-style: none;
   margin-bottom: 115px;
-  .score__list-item {
+  
+  .score__list-item:first-child {
     margin-right: 31px;
+  }
+  .score__list-item {
     text-align: center;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
     .score__item-title {
@@ -126,7 +129,6 @@
         border-bottom: 2px solid #DADADA;
       }
       }
-     
     }
     .score__button {
       margin-bottom: 20px;
@@ -175,8 +177,8 @@
   }
 
   .score__list-item:nth-child(3) {
-    margin-right: 31px;
     text-align: center;
+
     .score__item-title {
       position: relative;
       text-align: center;
