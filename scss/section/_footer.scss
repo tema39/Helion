@@ -8,8 +8,7 @@
 
   .footer__container {
     display: flex;
-    max-width: 1099px;
-    margin: 0px auto;
+    justify-content: center;
     padding: 60px 0px 36px 0px;
 
     .footer__list {
@@ -32,16 +31,14 @@
         font-family: Milio;
       }
       .list__link {
-        color: #D09E70;
+        color: #d09e70;
       }
-      
     }
     .footer__conditions-list {
       list-style: none;
       margin-right: 46px;
 
       .footer__conditions-item {
-
         .footer__conditions-link {
           color: #eceae0;
           font-size: 12px;
@@ -50,7 +47,7 @@
           font-family: Milio;
         }
         .conditions-link {
-          color: #D09E70;
+          color: #d09e70;
           text-decoration: underline;
         }
       }
@@ -65,7 +62,7 @@
       .item__payment_option {
         margin-right: 30px;
         display: flex;
-        
+
         &:nth-child(6) {
           margin: 0px;
         }
@@ -76,23 +73,33 @@
     }
   }
   .footer__attention-container {
-    background: #1A1A1A;
-  }
-  .footer__attention-wrap {
+    background: #1a1a1a;
     display: flex;
-    width: 1099px;
-    margin: 0px auto;
-    align-items: center;
-    padding: 35px 0px;
+    justify-content: center;
 
-    .footer__attention-text {
-      width: 880px;
-      font-size: 10px;
-      line-height: 10px;
-      letter-spacing: 0.05em;
-      margin-right: 24px;
-      color: #424555;
-      font-family: Arial, Helvetica, sans-serif;
+    .footer__attention-wrap {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding: 35px 35px;
+
+      .footer__attention-text {
+        width: 880px;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.05em;
+        margin-right: 24px;
+        color: #424555;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .footer__attention-wrap {
+    width: unset;
+    padding: 35px 35px;
   }
 }

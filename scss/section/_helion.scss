@@ -6,9 +6,11 @@
   position: relative;
 }
 .helion__capital-wrap {
-  width: 961px;
   padding-top: 160px;
+  display: flex;
+  width: 984px;
   margin: 0px auto;
+  flex-direction: column;
 }
 
 .helion__title {
@@ -16,7 +18,6 @@
   line-height: 78px;
   color: #f9f6f2;
   max-width: 446px;
-  margin-bottom: 11px;
   font-family: Milio;
 }
 .helion__text {
@@ -94,5 +95,20 @@
   .title-two {
     text-decoration-line: underline;
     max-width: 110px;
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .catigori__finances-list {
+    display: none;
+  }
+}
+@media screen and (max-width:1024px) {
+  .helion__capital-wrap {
+    padding-top: 160px;
+    display: flex;
+    width: 750px;
+    margin: 0px auto;
+    flex-direction: column;
   }
 }

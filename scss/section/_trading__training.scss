@@ -66,3 +66,52 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto;
+
+    .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative;
+      padding: 0px 10px;
+
+      .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio;
+      }
+      .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 50px;
+        background-color: #F9F6F2;
+      }
+      .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    .trading__content-description {
+      padding: 0px 10px;
+    }
+    .trading__subtext {
+      padding: 0px 10px;
+    }
+  }
+}

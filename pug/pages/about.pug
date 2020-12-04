@@ -1,0 +1,67 @@
+include ../components/head.pug
+
+body
+  header.header
+    .header__logotip
+      img.logotip__img(src="./img/GroupLogotip.svg")
+    .header__info-wrap
+      .header__information
+        ul.info__list
+          li.info__list-item
+            a.info__list-link(href="./about.html") Web-терминал
+          li.info__list-item
+            a.info__list-link(href="") Контакты
+          li.info__list-item.item
+            a.info__list-link(href="") FAQ
+        .authorizations
+          a.authorizations__link(href="") Регистрация
+          a.authorizations__link.enter(href="") Войти
+        .header__call
+          button.header__call-button Перезвоните мне
+          .changing__language
+            button.changing__language-button.ru RU
+            button.changing__language-button.en EN
+      ul.navigation__list
+        li.navigation__list-item
+          h3.navigation__list-title О компании
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Торговля
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Аналитика
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Бонусы
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Партнерство
+  section.company
+    .company__title-wrap
+      h1.company__title О компании 
+      p.company__text 
+      |Одно из главных преимуществ инвестиционного брокера
+      |"Helion Capital" - гарантированная выплата дивидендов. 
+    ul.company__list  
+      li.company__list-item 
+        .company__icon-wrap 
+          a.company__link(href="")
+            img.company__link-icon(src="./img/GroupItems.svg")
+            p.company__link-text Защита
+              |средств
+      li.company__list-item 
+        .company__icon-wrap
+          a.company__link(href="")
+            img.company__link-icon(src="./img/laptopLaunchItems.svg")
+            p.company__link-text Быстрый
+            |старт
+      li.company__list-item
+        .company__icon-wrap 
+          a.company__link(href="")
+            img.company__link-icon(src="./img/imacclickIyems.svg")
+            p.company__link-text Аналитика
+            |рынка 

@@ -41,26 +41,28 @@
   }
   .market__list {
     list-style: none;
-    .market__list-inner {
-      display: flex;
-      margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
 
-      .market__list-item::before {
-        content: "";
-        position: absolute;
-        width: 407px;
-        height: 2px;
-        right: 0px;
-        top: 30px;
-        background-color:#E9E8E8;
-      }
-
-      .market__list-item {
+      &-item {
         display: flex;
-        margin-right: 44px;
         position: relative;
+        width: 50%;
 
+        &::before {
+          content: "";
+          position: absolute;
+          width: 380px;
+          height: 2px;
+          right: 45px;
+          top: 30px;
+          background-color:#E9E8E8;
+        }
 
+        &:nth-child(odd) {
+          padding-right: 44px;
+        }
         .market__item-icon {
           margin-right: 16px;
         }
@@ -68,7 +70,6 @@
           display: flex;
           align-items: center;
           margin-bottom: 15px;
-          width: 405px;
           justify-content: space-between;
 
           .market__content-title {
@@ -88,12 +89,11 @@
           }
         }
         .market__content-subtext {
-          width: 380px;
           font-size: 12px;
           line-height: 14px;
           font-family: Arial, Helvetica, sans-serif;
         }
       }
-    }
+    
   }
 }

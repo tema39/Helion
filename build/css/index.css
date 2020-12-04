@@ -125,6 +125,17 @@
 .navigation__list-item:first-child .navigation__list-title {
   color: #e3a873; }
 
+@media screen and (max-width: 1130px) {
+  .header {
+    justify-content: space-between; }
+    .header .header__info-wrap {
+      display: none; }
+    .header .header__logotip {
+      margin-left: 10px; }
+    .header .header__mobile-wrap {
+      display: flex;
+      margin-right: 25px; } }
+
 .helion {
   background-image: url("..//../img/topslide1.png");
   background-repeat: no-repeat;
@@ -133,16 +144,17 @@
   position: relative; }
 
 .helion__capital-wrap {
-  width: 961px;
   padding-top: 160px;
-  margin: 0px auto; }
+  display: flex;
+  width: 984px;
+  margin: 0px auto;
+  flex-direction: column; }
 
 .helion__title {
   font-size: 64px;
   line-height: 78px;
   color: #f9f6f2;
   max-width: 446px;
-  margin-bottom: 11px;
   font-family: Milio; }
 
 .helion__text {
@@ -206,6 +218,18 @@
   .catigori__finances-list .title-two {
     text-decoration-line: underline;
     max-width: 110px; }
+
+@media screen and (max-width: 1130px) {
+  .catigori__finances-list {
+    display: none; } }
+
+@media screen and (max-width: 1024px) {
+  .helion__capital-wrap {
+    padding-top: 160px;
+    display: flex;
+    width: 750px;
+    margin: 0px auto;
+    flex-direction: column; } }
 
 .dividends__analytics {
   background: #f9f6f2;
@@ -282,7 +306,7 @@
       width: 380px;
       right: 110px;
       top: 35px;
-      background-color: #DAB490; }
+      background-color: #dab490; }
     .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title {
       font-size: 36px;
       line-height: 51px;
@@ -294,7 +318,7 @@
       line-height: 14px;
       letter-spacing: 0.05em;
       font-family: Arial, Helvetica, sans-serif;
-      color: #43191F;
+      color: #43191f;
       text-decoration: none; }
   .dividends__container .special__offer-contianer .offer__list {
     list-style: none;
@@ -345,6 +369,125 @@
       line-height: 17px;
       font-family: Arial, Helvetica, sans-serif; }
 
+@media screen and (max-width: 1130px) {
+  .dividends__container {
+    max-width: 970px;
+    margin: 0px auto;
+    position: relative; }
+    .dividends__container .dividends__title {
+      margin-bottom: 34px;
+      font-size: 36px;
+      line-height: 53px;
+      color: #43191f;
+      font-family: Milio; }
+    .dividends__container .dividends__title::before {
+      content: "";
+      position: absolute;
+      width: 370px;
+      height: 2px;
+      right: 140px;
+      top: 28px;
+      background-color: gainsboro; } }
+
+@media screen and (max-width: 1024px) {
+  .dividends__container {
+    max-width: 970px;
+    margin: 0px auto;
+    position: relative; }
+    .dividends__container .dividends__title {
+      text-align: center;
+      margin-bottom: 34px;
+      font-size: 36px;
+      line-height: 53px;
+      color: #43191f;
+      font-family: Milio; }
+    .dividends__container .dividends__title::before {
+      content: "";
+      position: absolute;
+      width: 370px;
+      height: 2px;
+      right: 140px;
+      top: 60px;
+      background-color: #f9f6f2; }
+    .dividends__container .dividends__analytics-wrap {
+      padding: 0px 15px; }
+    .dividends__container .special__offer-contianer .special_offer-wrap {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+      padding: 0px 10px; }
+      .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 380px;
+        right: 110px;
+        top: 60px;
+        background-color: #f9f6f2; }
+      .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title {
+        font-size: 36px;
+        line-height: 51px;
+        color: #43191f;
+        font-family: Milio;
+        margin-bottom: 48px; }
+      .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-link {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #43191f;
+        text-decoration: none; }
+    .dividends__container .special__offer-contianer .offer__list {
+      list-style: none;
+      display: flex;
+      padding: 0px 10px; }
+      .dividends__container .special__offer-contianer .offer__list .offer__list-item:first-child {
+        padding: 30px 30px 23px 31px; }
+      .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(2) {
+        border: 5px solid #e0e0e0;
+        padding: 25px 40px 23px 30px; }
+      .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(3) {
+        border: 5px solid #e0e0e0;
+        padding: 25px 40px 23px 30px;
+        margin: 0px; }
+      .dividends__container .special__offer-contianer .offer__list-item {
+        margin-right: 30px;
+        border: 10px solid #cb9c71;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 320px;
+        width: 100%;
+        background: #ffffff; }
+      .dividends__container .special__offer-contianer .offer__list-title {
+        font-size: 24px;
+        line-height: 35px;
+        color: #632831;
+        margin-bottom: 16px;
+        font-family: Milio; }
+      .dividends__container .special__offer-contianer .offer__list-text {
+        max-width: 250px;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #686868; }
+      .dividends__container .special__offer-contianer .offer__list-subtext {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+      .dividends__container .special__offer-contianer .offer__list-score {
+        font-size: 18px;
+        line-height: 25px;
+        color: #cb9c71;
+        font-family: Milio; }
+      .dividends__container .special__offer-contianer .offer__list-link {
+        text-decoration: none;
+        font-size: 12px;
+        text-decoration-line: underline;
+        color: #632831;
+        line-height: 17px;
+        font-family: Arial, Helvetica, sans-serif; } }
+
 .account__container {
   padding-top: 50px;
   max-width: 970px;
@@ -355,7 +498,8 @@
     line-height: 25px;
     color: #979797;
     margin-bottom: 28px;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 10px; }
 
 .account__title-wrap {
   display: flex;
@@ -370,7 +514,7 @@
     width: 520px;
     right: 180px;
     top: 25px;
-    background-color: #DAB490; }
+    background-color: #dab490; }
   .account__title-wrap .account__title {
     font-size: 36px;
     line-height: 51px;
@@ -440,19 +584,19 @@
         height: 5px;
         left: 11px;
         top: 17px;
-        background-color: #D09E70; }
+        background-color: #d09e70; }
       .score__list .score__list-item .list__item-score .item {
         font-size: 14px;
         line-height: 41px;
         color: #000000;
         font-family: Arial, Helvetica, sans-serif;
         position: relative;
-        border-top: 2px solid #DADADA;
+        border-top: 2px solid #dadada;
         padding-left: 26px; }
       .score__list .score__list-item .list__item-score .item:first-child {
-        border-top: 2px solid #DADADA; }
+        border-top: 2px solid #dadada; }
       .score__list .score__list-item .list__item-score .item:last-child {
-        border-bottom: 2px solid #DADADA; }
+        border-bottom: 2px solid #dadada; }
   .score__list .score__button {
     margin-bottom: 20px;
     font-size: 16px;
@@ -462,7 +606,7 @@
     min-width: 280px;
     padding: 19px 50px;
     background-color: white;
-    color: #2A2A2A; }
+    color: #2a2a2a; }
 
 .score__list-item:nth-child(2) {
   margin-right: 31px;
@@ -484,14 +628,14 @@
   .score__list-item:nth-child(2) .score__button {
     margin-bottom: 20px;
     font-size: 16px;
-    border: 1px solid #D09E70;
+    border: 1px solid #d09e70;
     line-height: 16px;
     letter-spacing: 0.05em;
     min-width: 280px;
     padding: 19px 50px;
-    background: #D09E70;
+    background: #d09e70;
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF; }
+    color: #ffffff; }
 
 .score__list-item:nth-child(3) {
   text-align: center; }
@@ -512,14 +656,42 @@
   .score__list-item:nth-child(3) .score__button {
     margin-bottom: 20px;
     font-size: 16px;
-    border: 1px solid #72303A;
+    border: 1px solid #72303a;
     line-height: 16px;
     letter-spacing: 0.05em;
     min-width: 280px;
     padding: 19px 50px;
     background: white;
-    color: #72303A;
+    color: #72303a;
     font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (max-width: 1130px) {
+  .trading__style-container {
+    justify-content: center; }
+    .trading__style-container .score__list {
+      flex-direction: column; }
+    .trading__style-container .score__list-item {
+      margin-bottom: 20px;
+      margin-right: 0px; }
+    .trading__style-container .score__list-item:first-child {
+      margin-right: 0px; } }
+
+@media screen and (max-width: 1023px) {
+  .account__container .account__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 0px 10px; }
+    .account__container .account__title-wrap .account__title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 520px;
+      right: 180px;
+      top: 40px;
+      background-color: white; } }
 
 .trading__training {
   background: #f9f6f2; }
@@ -577,6 +749,45 @@
     color: #000000;
     font-family: Arial, Helvetica, sans-serif; }
 
+@media screen and (max-width: 1023px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto; }
+    .training__container .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative;
+      padding: 0px 10px; }
+      .training__container .training__title-wrap .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio; }
+      .training__container .training__title-wrap .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 50px;
+        background-color: #F9F6F2; }
+      .training__container .training__title-wrap .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif; }
+    .training__container .trading__content-description {
+      padding: 0px 10px; }
+    .training__container .trading__subtext {
+      padding: 0px 10px; } }
+
 .market__news {
   background: #f9f6f2;
   padding-bottom: 100px; }
@@ -611,47 +822,46 @@
       text-decoration: none;
       font-family: Arial, Helvetica, sans-serif; }
   .market__news-container .market__list {
-    list-style: none; }
-    .market__news-container .market__list .market__list-inner {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .market__news-container .market__list-item {
       display: flex;
-      margin-bottom: 50px; }
-      .market__news-container .market__list .market__list-inner .market__list-item::before {
+      position: relative;
+      width: 50%; }
+      .market__news-container .market__list-item::before {
         content: "";
         position: absolute;
-        width: 407px;
+        width: 380px;
         height: 2px;
-        right: 0px;
+        right: 45px;
         top: 30px;
         background-color: #E9E8E8; }
-      .market__news-container .market__list .market__list-inner .market__list-item {
+      .market__news-container .market__list-item:nth-child(odd) {
+        padding-right: 44px; }
+      .market__news-container .market__list-item .market__item-icon {
+        margin-right: 16px; }
+      .market__news-container .market__list-item .market__content {
         display: flex;
-        margin-right: 44px;
-        position: relative; }
-        .market__news-container .market__list .market__list-inner .market__list-item .market__item-icon {
-          margin-right: 16px; }
-        .market__news-container .market__list .market__list-inner .market__list-item .market__content {
-          display: flex;
-          align-items: center;
-          margin-bottom: 15px;
-          width: 405px;
-          justify-content: space-between; }
-          .market__news-container .market__list .market__list-inner .market__list-item .market__content .market__content-title {
-            font-size: 18px;
-            line-height: 26px;
-            color: #43191f;
-            font-family: Milio; }
-          .market__news-container .market__list .market__list-inner .market__list-item .market__content .color {
-            color: #d09e70;
-            text-decoration-line: underline; }
-          .market__news-container .market__list .market__list-inner .market__list-item .market__content .market__content-text {
-            font-size: 12px;
-            line-height: 20px;
-            font-family: Arial, Helvetica, sans-serif; }
-        .market__news-container .market__list .market__list-inner .market__list-item .market__content-subtext {
-          width: 380px;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between; }
+        .market__news-container .market__list-item .market__content .market__content-title {
+          font-size: 18px;
+          line-height: 26px;
+          color: #43191f;
+          font-family: Milio; }
+        .market__news-container .market__list-item .market__content .color {
+          color: #d09e70;
+          text-decoration-line: underline; }
+        .market__news-container .market__list-item .market__content .market__content-text {
           font-size: 12px;
-          line-height: 14px;
+          line-height: 20px;
           font-family: Arial, Helvetica, sans-serif; }
+      .market__news-container .market__list-item .market__content-subtext {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif; }
 
 .company__news {
   background-color: #f9f6f2; }
@@ -659,6 +869,7 @@
 .company__news-container {
   max-width: 1024px;
   margin: auto;
+  width: 100%;
   padding-bottom: 60px; }
   .company__news-container .company__news-title {
     display: flex;
@@ -783,8 +994,14 @@
   padding: 85px 0px 50px 0px; }
   .company__list-item {
     margin-right: 19px; }
-  .company__list-item:nth-child(5) {
-    margin-right: 0px; }
+    .company__list-item:last-child {
+      margin-right: 0px; }
+  .company__list .company__item-img {
+    width: 100%; }
+
+@media screen and (max-width: 1023px) {
+  .training__title-wrap {
+    padding: 0px 10px; } }
 
 .footer {
   background: #282a35;
@@ -793,8 +1010,7 @@
     margin-right: 53px; }
   .footer .footer__container {
     display: flex;
-    max-width: 1099px;
-    margin: 0px auto;
+    justify-content: center;
     padding: 60px 0px 36px 0px; }
     .footer .footer__container .footer__list {
       list-style: none;
@@ -813,7 +1029,7 @@
         margin-bottom: 20px;
         font-family: Milio; }
       .footer .footer__container .footer__list .list__link {
-        color: #D09E70; }
+        color: #d09e70; }
     .footer .footer__container .footer__conditions-list {
       list-style: none;
       margin-right: 46px; }
@@ -824,7 +1040,7 @@
         text-decoration: none;
         font-family: Milio; }
       .footer .footer__container .footer__conditions-list .footer__conditions-item .conditions-link {
-        color: #D09E70;
+        color: #d09e70;
         text-decoration: underline; }
     .footer .footer__container .list__payment-option {
       width: 346px;
@@ -840,21 +1056,28 @@
         .footer .footer__container .list__payment-option .item__payment_option:nth-child(3) {
           margin: 0px; }
   .footer .footer__attention-container {
-    background: #1A1A1A; }
-  .footer .footer__attention-wrap {
+    background: #1a1a1a;
     display: flex;
-    width: 1099px;
-    margin: 0px auto;
-    align-items: center;
-    padding: 35px 0px; }
-    .footer .footer__attention-wrap .footer__attention-text {
-      width: 880px;
-      font-size: 10px;
-      line-height: 10px;
-      letter-spacing: 0.05em;
-      margin-right: 24px;
-      color: #424555;
-      font-family: Arial, Helvetica, sans-serif; }
+    justify-content: center; }
+    .footer .footer__attention-container .footer__attention-wrap {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding: 35px 35px; }
+      .footer .footer__attention-container .footer__attention-wrap .footer__attention-text {
+        width: 880px;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.05em;
+        margin-right: 24px;
+        color: #424555;
+        font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (max-width: 1130px) {
+  .footer__attention-wrap {
+    width: unset;
+    padding: 35px 35px; } }
 
 @font-face {
   font-family: "Millo";

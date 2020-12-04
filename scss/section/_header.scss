@@ -161,6 +161,19 @@
   }
 }
 
-@media screen and (max-width:1400px) {
-  
+@media screen and (max-width:1130px) {
+  .header {
+    justify-content: space-between;
+
+  .header__info-wrap {
+    display: none;
+  }
+  .header__logotip {
+    margin-left: 10px;
+  }
+  .header__mobile-wrap {
+    display: flex;
+    margin-right: 25px;
+  }
+}
 }
