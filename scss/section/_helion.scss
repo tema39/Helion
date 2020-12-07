@@ -98,17 +98,25 @@
   }
 }
 
-@media screen and (max-width:1130px) {
+@media screen and (max-width: 1130px) {
   .catigori__finances-list {
     display: none;
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .helion__capital-wrap {
     padding-top: 160px;
     display: flex;
     width: 750px;
     margin: 0px auto;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .helion {
+    display: none;
+  }
+  .dividends__analytics {
+    padding-top: 20px;
   }
 }

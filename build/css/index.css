@@ -231,6 +231,12 @@
     margin: 0px auto;
     flex-direction: column; } }
 
+@media screen and (max-width: 750px) {
+  .helion {
+    display: none; }
+  .dividends__analytics {
+    padding-top: 20px; } }
+
 .dividends__analytics {
   background: #f9f6f2;
   padding-top: 150px;
@@ -240,134 +246,135 @@
   max-width: 970px;
   margin: 0px auto;
   position: relative; }
-  .dividends__container .dividends__title {
-    margin-bottom: 34px;
-    font-size: 36px;
-    line-height: 53px;
-    color: #43191f;
-    font-family: Milio; }
-  .dividends__container .dividends__title::before {
-    content: "";
-    position: absolute;
-    width: 570px;
-    height: 2px;
-    right: -40px;
-    top: 28px;
-    background-color: gainsboro; }
-  .dividends__container .dividends__analytics-wrap {
-    display: flex; }
-    .dividends__container .dividends__analytics-wrap .dividends__list {
-      list-style: none;
-      margin-right: 22px; }
-      .dividends__container .dividends__analytics-wrap .dividends__list-title {
-        font-size: 24px;
-        line-height: 35px;
-        color: #d09e70;
-        margin-bottom: 46px;
-        font-family: Milio; }
-      .dividends__container .dividends__analytics-wrap .dividends__list-item {
-        display: flex;
-        margin-bottom: 53px;
-        align-items: center; }
-      .dividends__container .dividends__analytics-wrap .dividends__list-img {
-        margin-right: 17px; }
-      .dividends__container .dividends__analytics-wrap .dividends__list-text {
-        font-size: 16px;
-        line-height: 22px;
-        color: #000000;
-        font-family: Helvetica, sans-serif; }
-    .dividends__container .dividends__analytics-wrap .analytics__list {
-      list-style: none; }
-      .dividends__container .dividends__analytics-wrap .analytics__list-title {
-        font-size: 24px;
-        line-height: 35px;
-        color: #d09e70;
-        margin-bottom: 46px;
-        font-family: Milio; }
-      .dividends__container .dividends__analytics-wrap .analytics__list-item {
-        display: flex;
-        margin-bottom: 53px; }
-      .dividends__container .dividends__analytics-wrap .analytics__list-img {
-        margin-right: 17px; }
-      .dividends__container .dividends__analytics-wrap .analytics__list-text {
-        font-size: 16px;
-        line-height: 22px;
-        color: #000000;
-        font-family: Arial, Helvetica, sans-serif; }
-  .dividends__container .special__offer-contianer .special_offer-wrap {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    position: relative; }
-    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      width: 380px;
-      right: 110px;
-      top: 35px;
-      background-color: #dab490; }
-    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title {
-      font-size: 36px;
-      line-height: 51px;
-      color: #43191f;
-      font-family: Milio;
-      margin-bottom: 48px; }
-    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-link {
-      font-size: 14px;
-      line-height: 14px;
-      letter-spacing: 0.05em;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #43191f;
-      text-decoration: none; }
-  .dividends__container .special__offer-contianer .offer__list {
+
+.dividends__title::before {
+  content: "";
+  position: absolute;
+  width: 570px;
+  height: 2px;
+  right: -40px;
+  top: 28px;
+  background-color: gainsboro; }
+
+.dividendes__text-mobile {
+  display: none; }
+
+.dividends__analytics-wrap {
+  display: flex; }
+  .dividends__analytics-wrap .dividends__list {
     list-style: none;
-    display: flex; }
-    .dividends__container .special__offer-contianer .offer__list .offer__list-item:first-child {
-      padding: 30px 30px 23px 31px; }
-    .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(2) {
-      border: 5px solid #e0e0e0;
-      padding: 25px 40px 23px 30px; }
-    .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(3) {
-      border: 5px solid #e0e0e0;
-      padding: 25px 40px 23px 30px;
-      margin: 0px; }
-    .dividends__container .special__offer-contianer .offer__list-item {
-      margin-right: 30px;
-      border: 10px solid #cb9c71;
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-      max-width: 320px;
-      width: 100%;
-      background: #ffffff; }
-    .dividends__container .special__offer-contianer .offer__list-title {
+    margin-right: 22px; }
+    .dividends__analytics-wrap .dividends__list-title {
       font-size: 24px;
       line-height: 35px;
-      color: #632831;
-      margin-bottom: 16px;
+      color: #d09e70;
+      margin-bottom: 46px;
       font-family: Milio; }
-    .dividends__container .special__offer-contianer .offer__list-text {
-      max-width: 250px;
-      font-size: 12px;
-      line-height: 14px;
-      margin-bottom: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #686868; }
-    .dividends__container .special__offer-contianer .offer__list-subtext {
+    .dividends__analytics-wrap .dividends__list-item {
       display: flex;
-      align-items: center;
-      justify-content: space-between; }
-    .dividends__container .special__offer-contianer .offer__list-score {
-      font-size: 18px;
-      line-height: 25px;
-      color: #cb9c71;
+      margin-bottom: 53px;
+      align-items: center; }
+    .dividends__analytics-wrap .dividends__list-img {
+      margin-right: 17px; }
+    .dividends__analytics-wrap .dividends__list-text {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Helvetica, sans-serif; }
+  .dividends__analytics-wrap .analytics__list {
+    list-style: none; }
+    .dividends__analytics-wrap .analytics__list-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #d09e70;
+      margin-bottom: 46px;
       font-family: Milio; }
-    .dividends__container .special__offer-contianer .offer__list-link {
-      text-decoration: none;
-      font-size: 12px;
-      text-decoration-line: underline;
-      color: #632831;
-      line-height: 17px;
+    .dividends__analytics-wrap .analytics__list-item {
+      display: flex;
+      margin-bottom: 53px; }
+    .dividends__analytics-wrap .analytics__list-img {
+      margin-right: 17px; }
+    .dividends__analytics-wrap .analytics__list-text {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
       font-family: Arial, Helvetica, sans-serif; }
+
+.special__offer-contianer .special_offer-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: relative; }
+  .special__offer-contianer .special_offer-wrap .special__offer-title::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 380px;
+    right: 110px;
+    top: 35px;
+    background-color: #dab490; }
+  .special__offer-contianer .special_offer-wrap .special__offer-title {
+    font-size: 36px;
+    line-height: 51px;
+    color: #43191f;
+    font-family: Milio;
+    margin-bottom: 48px; }
+  .special__offer-contianer .special_offer-wrap .special__offer-link {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #43191f;
+    text-decoration: none; }
+
+.special__offer-contianer .offer__list {
+  list-style: none;
+  display: flex; }
+  .special__offer-contianer .offer__list .offer__list-item:first-child {
+    padding: 30px 30px 23px 31px; }
+  .special__offer-contianer .offer__list .offer__list-item:nth-child(2) {
+    border: 5px solid #e0e0e0;
+    padding: 25px 40px 23px 30px; }
+  .special__offer-contianer .offer__list .offer__list-item:nth-child(3) {
+    border: 5px solid #e0e0e0;
+    padding: 25px 40px 23px 30px;
+    margin: 0px; }
+  .special__offer-contianer .offer__list-item {
+    margin-right: 30px;
+    border: 10px solid #cb9c71;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    width: 100%;
+    background: #ffffff; }
+  .special__offer-contianer .offer__list-title {
+    font-size: 24px;
+    line-height: 35px;
+    color: #632831;
+    margin-bottom: 16px;
+    font-family: Milio; }
+  .special__offer-contianer .offer__list-text {
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #686868; }
+  .special__offer-contianer .offer__list-subtext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .special__offer-contianer .offer__list-score {
+    font-size: 18px;
+    line-height: 25px;
+    color: #cb9c71;
+    font-family: Milio; }
+  .special__offer-contianer .offer__list-link {
+    text-decoration: none;
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: #632831;
+    line-height: 17px;
+    font-family: Arial, Helvetica, sans-serif; }
 
 @media screen and (max-width: 1130px) {
   .dividends__container {
@@ -487,6 +494,181 @@
         color: #632831;
         line-height: 17px;
         font-family: Arial, Helvetica, sans-serif; } }
+
+@media screen and (max-width: 768px) {
+  .dividends__container .dividends__title {
+    font-size: 26px;
+    line-height: 30px;
+    color: #43191f; }
+  .dividends__container .special_offer-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative; }
+    .dividends__container .special_offer-wrap .special__offer-title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 380px;
+      right: 110px;
+      top: 35px;
+      background-color: #dab490;
+      display: none; }
+    .dividends__container .special_offer-wrap .special__offer-title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio;
+      margin-bottom: 48px; }
+    .dividends__container .special_offer-wrap .special__offer-link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #43191f;
+      text-decoration: none; }
+  .dividends__container .special__offer-contianer .special_offer-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative; }
+    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 380px;
+      right: 110px;
+      top: 35px;
+      background-color: #dab490; }
+    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio;
+      margin-bottom: 48px; }
+    .dividends__container .special__offer-contianer .special_offer-wrap .special__offer-link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #43191f;
+      text-decoration: none;
+      display: none; }
+  .dividends__container .special__offer-contianer .offer__list {
+    list-style: none;
+    display: flex; }
+    .dividends__container .special__offer-contianer .offer__list .offer__list-item:first-child {
+      padding: 30px 30px 23px 31px; }
+    .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(2) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px; }
+    .dividends__container .special__offer-contianer .offer__list .offer__list-item:nth-child(3) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      margin: 0px; }
+    .dividends__container .special__offer-contianer .offer__list-item {
+      margin-right: 5px;
+      border: 10px solid #cb9c71;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 320px;
+      width: 100%;
+      background: #ffffff; }
+    .dividends__container .special__offer-contianer .offer__list-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #632831;
+      margin-bottom: 16px;
+      font-family: Milio; }
+    .dividends__container .special__offer-contianer .offer__list-text {
+      max-width: 250px;
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #686868; }
+    .dividends__container .special__offer-contianer .offer__list-subtext {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .dividends__container .special__offer-contianer .offer__list-score {
+      font-size: 18px;
+      line-height: 25px;
+      color: #cb9c71;
+      font-family: Milio; }
+    .dividends__container .special__offer-contianer .offer__list-link {
+      text-decoration: none;
+      font-size: 12px;
+      text-decoration-line: underline;
+      color: #632831;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif; } }
+
+@media screen and (max-width: 750px) {
+  .offer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+    .offer__list .offer__list-item:first-child {
+      padding: 30px 30px 23px 31px;
+      margin: 0px auto; }
+    .offer__list .offer__list-item:nth-child(2) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      display: none; }
+    .offer__list .offer__list-item:nth-child(3) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      margin: 0px;
+      display: none; }
+    .offer__list-item {
+      margin-right: 5px;
+      border: 10px solid #cb9c71;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 320px;
+      width: 100%;
+      background: #ffffff; }
+    .offer__list-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #632831;
+      margin-bottom: 16px;
+      font-family: Milio; }
+    .offer__list-text {
+      max-width: 250px;
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #686868; }
+    .offer__list-subtext {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .offer__list-score {
+      font-size: 18px;
+      line-height: 25px;
+      color: #cb9c71;
+      font-family: Milio; }
+    .offer__list-link {
+      text-decoration: none;
+      font-size: 12px;
+      text-decoration-line: underline;
+      color: #632831;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif; }
+  .dividends__analytics {
+    padding-top: 50px; } }
+
+@media screen and (max-width: 635px) {
+  .dividends__container .dividends__analytics-wrap {
+    display: none; }
+  .dividendes__text-mobile {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+    width: 300px; } }
 
 .account__container {
   padding-top: 50px;
@@ -693,6 +875,23 @@
       top: 40px;
       background-color: white; } }
 
+@media screen and (max-width: 768px) {
+  .trading__style-container {
+    justify-content: center; }
+    .trading__style-container .score__list {
+      flex-direction: column; }
+    .trading__style-container .score__list-item {
+      margin-bottom: 20px;
+      margin-right: 0px; }
+    .trading__style-container .score__list-item:first-child {
+      margin-right: 0px; }
+    .trading__style-container .score__list-item:nth-child(2) {
+      display: none; }
+    .trading__style-container .score__list-item:last-child {
+      display: none; }
+  .account__link {
+    display: none; } }
+
 .trading__training {
   background: #f9f6f2; }
 
@@ -788,6 +987,119 @@
     .training__container .trading__subtext {
       padding: 0px 10px; } }
 
+@media screen and (max-width: 768px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto; }
+    .training__container .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative; }
+      .training__container .training__title-wrap .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio; }
+      .training__container .training__title-wrap .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 25px;
+        background-color: #d09e70;
+        display: none; }
+      .training__container .training__title-wrap .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif; }
+    .training__container .trading__content-description {
+      display: flex;
+      margin-bottom: 16px; }
+      .training__container .trading__content-description .trading__content-text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        margin-right: 23px;
+        font-family: Arial, Helvetica, sans-serif; }
+      .training__container .trading__content-description .trading__content-img {
+        position: relative; }
+        .training__container .trading__content-description .trading__content-img .trading__icon {
+          position: absolute;
+          left: 45%;
+          top: 20%; }
+    .training__container .trading__subtext {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif; } }
+
+@media screen and (max-width: 767px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto; }
+    .training__container .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative; }
+      .training__container .training__title-wrap .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio; }
+      .training__container .training__title-wrap .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 25px;
+        background-color: #d09e70; }
+      .training__container .training__title-wrap .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif;
+        display: none; }
+    .training__container .trading__content-description {
+      display: flex;
+      margin-bottom: 16px;
+      flex-direction: column; }
+      .training__container .trading__content-description .trading__content-text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        margin-right: 23px;
+        font-family: Arial, Helvetica, sans-serif; }
+      .training__container .trading__content-description .trading__content-img {
+        position: relative; }
+        .training__container .trading__content-description .trading__content-img .trading__img {
+          width: 305px; }
+        .training__container .trading__content-description .trading__content-img .trading__icon {
+          position: absolute;
+          left: 18%;
+          top: 35%; }
+    .training__container .trading__subtext {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif; } }
+
 .market__news {
   background: #f9f6f2;
   padding-bottom: 100px; }
@@ -813,12 +1125,12 @@
       height: 2px;
       right: 160px;
       top: 25px;
-      background-color: #D09E70; }
+      background-color: #d09e70; }
     .market__news-container .market__title-wrap .market__link {
       font-size: 14px;
       line-height: 14px;
       letter-spacing: 0.05em;
-      color: #43191F;
+      color: #43191f;
       text-decoration: none;
       font-family: Arial, Helvetica, sans-serif; }
   .market__news-container .market__list {
@@ -836,7 +1148,7 @@
         height: 2px;
         right: 45px;
         top: 30px;
-        background-color: #E9E8E8; }
+        background-color: #e9e8e8; }
       .market__news-container .market__list-item:nth-child(odd) {
         padding-right: 44px; }
       .market__news-container .market__list-item .market__item-icon {
@@ -862,6 +1174,98 @@
         font-size: 12px;
         line-height: 14px;
         font-family: Arial, Helvetica, sans-serif; }
+
+@media screen and (max-width: 1023px) {
+  .market__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 0px 10px; }
+    .market__title-wrap .markit__title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio; }
+    .market__title-wrap .markit__title::before {
+      content: "";
+      position: absolute;
+      width: 580px;
+      height: 2px;
+      right: 160px;
+      top: 25px;
+      background-color: #d09e70;
+      display: none; }
+    .market__title-wrap .market__link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #43191f;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif; }
+  .market__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px; }
+    .market__list-item {
+      display: flex;
+      position: relative;
+      width: 50%; }
+      .market__list-item::before {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 2px;
+        right: 45px;
+        top: 30px;
+        background-color: #e9e8e8;
+        display: none; }
+      .market__list-item:nth-child(odd) {
+        padding-right: 44px; }
+      .market__list-item .market__item-icon {
+        margin-right: 16px; }
+      .market__list-item .market__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between; }
+        .market__list-item .market__content .market__content-title {
+          font-size: 18px;
+          line-height: 26px;
+          color: #43191f;
+          font-family: Milio; }
+        .market__list-item .market__content .color {
+          color: #d09e70;
+          text-decoration-line: underline; }
+        .market__list-item .market__content .market__content-text {
+          font-size: 12px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif; }
+      .market__list-item .market__content-subtext {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif; }
+  .news__list {
+    padding: 0px 10px; } }
+
+@media screen and (max-width: 767px) {
+  .market__news .market__list {
+    flex-direction: column; }
+  .market__news .market__list-item {
+    width: 90%; }
+    .market__news .market__list-item .market__item-icon {
+      margin-right: 10px; }
+  .market__news .market__content-wrap .market__content {
+    margin-bottom: 0px; }
+  .market__news .market__content-subtext {
+    margin-bottom: 30px;
+    color: #000000; }
+  .market__news .market__list-item:nth-child(odd) {
+    padding-right: 0px; }
+  .market__link {
+    display: none; } }
 
 .company__news {
   background-color: #f9f6f2; }
@@ -919,7 +1323,7 @@
         right: 10px;
         top: 115px;
         height: 2px;
-        background-color: #EAEAEA; }
+        background-color: #eaeaea; }
       .company__news-container .news__list .news__list-item .news__content-wrap {
         background-color: white;
         width: 310px;
@@ -948,7 +1352,7 @@
           line-height: 20px;
           color: #000000;
           font-family: Arial, Helvetica, sans-serif; }
-        .company__news-container .news__list .news__list-item .news__date-wrap .news__link {
+        .company__news-container .news__list .news__list-item .news__date-wrap .news__links {
           font-size: 12px;
           line-height: 17px;
           color: #cb9c71;
@@ -986,6 +1390,119 @@
         background: transparent;
         color: #ffffff; }
 
+@media screen and (max-width: 1023px) {
+  .company__news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    position: relative;
+    padding: 0px 10px; }
+    .company__news-title .news__title::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 2px;
+      background-color: #d09e70;
+      right: 160px;
+      top: 27px;
+      display: none; }
+    .company__news-title .news__title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio; }
+    .company__news-title .news__link {
+      font-size: 14px;
+      line-height: 16px;
+      color: #43191f;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif; }
+  .news__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px; }
+    .news__list .news__list-item:first-child {
+      margin-right: 0px; }
+    .news__list .news__list-item {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .news__list .news__list-item .news__list-item:last-child {
+        margin-right: 0px; }
+      .news__list .news__list-item .news__img-wrap {
+        display: flex;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); }
+        .news__list .news__list-item .news__img-wrap .news__img {
+          width: 100%;
+          object-fit: cover; }
+      .news__list .news__list-item .news__content-wrap::before {
+        content: "";
+        position: absolute;
+        width: 290px;
+        right: 10px;
+        top: 115px;
+        height: 2px;
+        background-color: #eaeaea; }
+      .news__list .news__list-item .news__content-wrap {
+        background-color: white;
+        width: 310px;
+        padding: 10px 17px 10px 10px;
+        position: relative;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); }
+        .news__list .news__list-item .news__content-wrap .news__content-title {
+          font-size: 17px;
+          line-height: 25px;
+          text-decoration-line: underline;
+          margin-bottom: 6px;
+          color: #43191f;
+          font-family: Milio; }
+        .news__list .news__list-item .news__content-wrap .news__content-text {
+          font-size: 12px;
+          line-height: 17px;
+          width: 280px;
+          color: #000000;
+          margin-bottom: 13px;
+          font-family: Arial, Helvetica, sans-serif; }
+      .news__list .news__list-item .news__date-wrap {
+        display: flex;
+        justify-content: space-between; }
+        .news__list .news__list-item .news__date-wrap .news__date {
+          font-size: 12px;
+          line-height: 20px;
+          color: #000000;
+          font-family: Arial, Helvetica, sans-serif; }
+        .news__list .news__list-item .news__date-wrap .news__link {
+          font-size: 12px;
+          line-height: 17px;
+          color: #cb9c71;
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif; } }
+
+@media screen and (max-width: 767px) {
+  .company__news .company__news-container .news__link {
+    display: none; }
+  .company__news .company__news-container .banner__finances-wrap .banner__title-buttons {
+    padding: 20px 20px 20px 22px;
+    text-align: center; }
+    .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__title {
+      display: none; }
+    .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__title-mobile {
+      font-size: 26px;
+      line-height: 27px;
+      margin-bottom: 18px;
+      color: #ffffff;
+      font-family: Milio;
+      text-align: center; }
+    .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__button {
+      margin-right: 0px;
+      max-width: unset;
+      margin-bottom: 10px; }
+    .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__button-finances {
+      margin-right: 0px; } }
+
 .company__list {
   display: flex;
   justify-content: center;
@@ -1000,8 +1517,18 @@
     width: 100%; }
 
 @media screen and (max-width: 1023px) {
-  .training__title-wrap {
-    padding: 0px 10px; } }
+  .company__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 85px 10px 50px 10px; }
+    .company__list-item {
+      margin-right: 19px; }
+      .company__list-item:last-child {
+        margin-right: 0px; }
+    .company__list .company__item-img {
+      width: 100%; } }
 
 .footer {
   background: #282a35;
@@ -1043,7 +1570,7 @@
         color: #d09e70;
         text-decoration: underline; }
     .footer .footer__container .list__payment-option {
-      width: 346px;
+      width: 280px;
       display: flex;
       flex-wrap: wrap;
       list-style: none;
@@ -1078,6 +1605,92 @@
   .footer__attention-wrap {
     width: unset;
     padding: 35px 35px; } }
+
+@media screen and (max-width: 950px) {
+  .footer {
+    background: #282a35;
+    margin: 0px auto; }
+    .footer .footer__logo-wrap {
+      margin-right: 53px;
+      padding-left: 10px; }
+    .footer .footer__container {
+      display: flex;
+      justify-content: center;
+      padding: 60px 0px 36px 0px; }
+      .footer .footer__container .footer__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 260px;
+        height: 124px;
+        display: none; }
+        .footer .footer__container .footer__list-item {
+          width: 50%; }
+        .footer .footer__container .footer__list-link {
+          text-align: center;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 16px;
+          color: #eceae0;
+          margin-bottom: 20px;
+          font-family: Milio; }
+        .footer .footer__container .footer__list .list__link {
+          color: #d09e70; }
+      .footer .footer__container .footer__conditions-list {
+        list-style: none;
+        margin-right: 46px; }
+        .footer .footer__container .footer__conditions-list .footer__conditions-item .footer__conditions-link {
+          color: #eceae0;
+          font-size: 12px;
+          line-height: 26px;
+          text-decoration: none;
+          font-family: Milio; }
+        .footer .footer__container .footer__conditions-list .footer__conditions-item .conditions-link {
+          color: #d09e70;
+          text-decoration: underline; }
+      .footer .footer__container .list__payment-option {
+        width: 303px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center; }
+        .footer .footer__container .list__payment-option .item__payment_option {
+          margin-right: 30px;
+          display: flex; }
+          .footer .footer__container .list__payment-option .item__payment_option:nth-child(6) {
+            margin: 0px; }
+          .footer .footer__container .list__payment-option .item__payment_option:nth-child(3) {
+            margin: 0px; } }
+
+@media screen and (max-width: 767px) {
+  .footer__logo-wrap {
+    display: none; } }
+
+@media screen and (max-width: 540px) {
+  .footer .footer__container {
+    flex-direction: column; }
+    .footer .footer__container .footer__conditions-list {
+      margin-bottom: 64px;
+      padding-left: 30px; }
+    .footer .footer__container .list__payment-option {
+      padding-left: 30px;
+      width: 310px; }
+      .footer .footer__container .list__payment-option .item__payment_option {
+        margin-bottom: 10px;
+        display: flex; }
+  .footer .footer__attention-container .footer__attention-wrap {
+    flex-direction: column;
+    padding: 25px 10px; }
+    .footer .footer__attention-container .footer__attention-wrap .footer__attention-text {
+      width: 100%;
+      font-size: 8px;
+      line-height: 8px;
+      margin-right: 0px;
+      margin-bottom: 10px; }
+    .footer .footer__attention-container .footer__attention-wrap .footer__img-logotip {
+      place-self: flex-end; }
+      .footer .footer__attention-container .footer__attention-wrap .footer__img-logotip .footer__img {
+        width: 100%; } }
 
 @font-face {
   font-family: "Millo";

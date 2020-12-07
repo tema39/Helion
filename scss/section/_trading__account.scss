@@ -244,3 +244,27 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .trading__style-container {
+    justify-content: center;
+    .score__list {
+      flex-direction: column;
+    }
+    .score__list-item {
+      margin-bottom: 20px;
+      margin-right: 0px;
+    }
+    .score__list-item:first-child {
+      margin-right: 0px;
+    }
+    .score__list-item:nth-child(2) {
+      display: none;
+    }
+    .score__list-item:last-child {
+      display: none;
+    }
+  }
+  .account__link {
+    display: none;
+  }
+}

@@ -8,165 +8,160 @@
   max-width: 970px;
   margin: 0px auto;
   position: relative;
+}
+.dividends__title::before {
+  content: "";
+  position: absolute;
+  width: 570px;
+  height: 2px;
+  right: -40px;
+  top: 28px;
+  background-color: gainsboro;
+}
+.dividendes__text-mobile {
+  display: none;
+}
+.dividends__analytics-wrap {
+  display: flex;
+  .dividends__list {
+    list-style: none;
+    margin-right: 22px;
 
-  .dividends__title {
-    margin-bottom: 34px;
-    font-size: 36px;
-    line-height: 53px;
-    color: #43191f;
-    font-family: Milio;
+    &-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #d09e70;
+      margin-bottom: 46px;
+      font-family: Milio;
+    }
+    &-item {
+      display: flex;
+      margin-bottom: 53px;
+      align-items: center;
+    }
+    &-img {
+      margin-right: 17px;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Helvetica, sans-serif;
+    }
   }
-  .dividends__title::before {
-    content: "";
-    position: absolute;
-    width: 570px;
-    height: 2px;
-    right: -40px;
-    top: 28px;
-    background-color: gainsboro;
+  .analytics__list {
+    list-style: none;
+    &-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #d09e70;
+      margin-bottom: 46px;
+      font-family: Milio;
+    }
+    &-item {
+      display: flex;
+      margin-bottom: 53px;
+    }
+    &-img {
+      margin-right: 17px;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   }
-  .dividends__analytics-wrap {
+}
+.special__offer-contianer {
+  .special_offer-wrap {
     display: flex;
-    .dividends__list {
-      list-style: none;
-      margin-right: 22px;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
 
-      &-title {
-        font-size: 24px;
-        line-height: 35px;
-        color: #d09e70;
-        margin-bottom: 46px;
-        font-family: Milio;
-      }
-      &-item {
-        display: flex;
-        margin-bottom: 53px;
-        align-items: center;
-      }
-      &-img {
-        margin-right: 17px;
-      }
-      &-text {
-        font-size: 16px;
-        line-height: 22px;
-        color: #000000;
-        font-family: Helvetica, sans-serif;
-      }
+    .special__offer-title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 380px;
+      right: 110px;
+      top: 35px;
+      background-color: #dab490;
     }
-    .analytics__list {
-      list-style: none;
-      &-title {
-        font-size: 24px;
-        line-height: 35px;
-        color: #d09e70;
-        margin-bottom: 46px;
-        font-family: Milio;
-      }
-      &-item {
-        display: flex;
-        margin-bottom: 53px;
-      }
-      &-img {
-        margin-right: 17px;
-      }
-      &-text {
-        font-size: 16px;
-        line-height: 22px;
-        color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+    .special__offer-title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio;
+      margin-bottom: 48px;
+    }
+    .special__offer-link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #43191f;
+      text-decoration: none;
     }
   }
-  .special__offer-contianer {
-    .special_offer-wrap {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      position: relative;
+  .offer__list {
+    list-style: none;
+    display: flex;
 
-      .special__offer-title::before {
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 380px;
-        right: 110px;
-        top: 35px;
-        background-color: #dab490;
-      }
-      .special__offer-title {
-        font-size: 36px;
-        line-height: 51px;
-        color: #43191f;
-        font-family: Milio;
-        margin-bottom: 48px;
-      }
-      .special__offer-link {
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 0.05em;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #43191f;
-        text-decoration: none;
-      }
+    .offer__list-item:first-child {
+      padding: 30px 30px 23px 31px;
     }
-    .offer__list {
-      list-style: none;
+    .offer__list-item:nth-child(2) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+    }
+    .offer__list-item:nth-child(3) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      margin: 0px;
+    }
+    &-item {
+      margin-right: 30px;
+      border: 10px solid #cb9c71;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 320px;
+      width: 100%;
+      background: #ffffff;
+    }
+    &-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #632831;
+      margin-bottom: 16px;
+      font-family: Milio;
+    }
+    &-text {
+      max-width: 250px;
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #686868;
+    }
+    &-subtext {
       display: flex;
-
-      .offer__list-item:first-child {
-        padding: 30px 30px 23px 31px;
-      }
-      .offer__list-item:nth-child(2) {
-        border: 5px solid #e0e0e0;
-        padding: 25px 40px 23px 30px;
-      }
-      .offer__list-item:nth-child(3) {
-        border: 5px solid #e0e0e0;
-        padding: 25px 40px 23px 30px;
-        margin: 0px;
-      }
-      &-item {
-        margin-right: 30px;
-        border: 10px solid #cb9c71;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-        max-width: 320px;
-        width: 100%;
-        background: #ffffff;
-      }
-      &-title {
-        font-size: 24px;
-        line-height: 35px;
-        color: #632831;
-        margin-bottom: 16px;
-        font-family: Milio;
-      }
-      &-text {
-        max-width: 250px;
-        font-size: 12px;
-        line-height: 14px;
-        margin-bottom: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #686868;
-      }
-      &-subtext {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      &-score {
-        font-size: 18px;
-        line-height: 25px;
-        color: #cb9c71;
-        font-family: Milio;
-      }
-      &-link {
-        text-decoration: none;
-        font-size: 12px;
-        text-decoration-line: underline;
-        color: #632831;
-        line-height: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-score {
+      font-size: 18px;
+      line-height: 25px;
+      color: #cb9c71;
+      font-family: Milio;
+    }
+    &-link {
+      text-decoration: none;
+      font-size: 12px;
+      text-decoration-line: underline;
+      color: #632831;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
 }
@@ -195,7 +190,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1024px) {
   .dividends__container {
     max-width: 970px;
@@ -317,5 +311,222 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .dividends__container {
+    .dividends__title {
+      font-size: 26px;
+      line-height: 30px;
+      color: #43191f;
+    }
+    .special_offer-wrap {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+
+      .special__offer-title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 380px;
+        right: 110px;
+        top: 35px;
+        background-color: #dab490;
+        display: none;
+      }
+      .special__offer-title {
+        font-size: 36px;
+        line-height: 51px;
+        color: #43191f;
+        font-family: Milio;
+        margin-bottom: 48px;
+      }
+      .special__offer-link {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #43191f;
+        text-decoration: none;
+      }
+    }
+    .special__offer-contianer {
+      .special_offer-wrap {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        position: relative;
+
+        .special__offer-title::before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 380px;
+          right: 110px;
+          top: 35px;
+          background-color: #dab490;
+        }
+        .special__offer-title {
+          font-size: 36px;
+          line-height: 51px;
+          color: #43191f;
+          font-family: Milio;
+          margin-bottom: 48px;
+        }
+        .special__offer-link {
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 0.05em;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #43191f;
+          text-decoration: none;
+          display: none;
+        }
+      }
+      .offer__list {
+        list-style: none;
+        display: flex;
+
+        .offer__list-item:first-child {
+          padding: 30px 30px 23px 31px;
+        }
+        .offer__list-item:nth-child(2) {
+          border: 5px solid #e0e0e0;
+          padding: 25px 40px 23px 30px;
+        }
+        .offer__list-item:nth-child(3) {
+          border: 5px solid #e0e0e0;
+          padding: 25px 40px 23px 30px;
+          margin: 0px;
+        }
+        &-item {
+          margin-right: 5px;
+          border: 10px solid #cb9c71;
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+          max-width: 320px;
+          width: 100%;
+          background: #ffffff;
+        }
+        &-title {
+          font-size: 24px;
+          line-height: 35px;
+          color: #632831;
+          margin-bottom: 16px;
+          font-family: Milio;
+        }
+        &-text {
+          max-width: 250px;
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #686868;
+        }
+        &-subtext {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        &-score {
+          font-size: 18px;
+          line-height: 25px;
+          color: #cb9c71;
+          font-family: Milio;
+        }
+        &-link {
+          text-decoration: none;
+          font-size: 12px;
+          text-decoration-line: underline;
+          color: #632831;
+          line-height: 17px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .offer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    .offer__list-item:first-child {
+      padding: 30px 30px 23px 31px;
+      margin: 0px auto;
+    }
+    .offer__list-item:nth-child(2) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      display: none;
+    }
+    .offer__list-item:nth-child(3) {
+      border: 5px solid #e0e0e0;
+      padding: 25px 40px 23px 30px;
+      margin: 0px;
+      display: none;
+    }
+    &-item {
+      margin-right: 5px;
+      border: 10px solid #cb9c71;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 320px;
+      width: 100%;
+      background: #ffffff;
+    }
+    &-title {
+      font-size: 24px;
+      line-height: 35px;
+      color: #632831;
+      margin-bottom: 16px;
+      font-family: Milio;
+    }
+    &-text {
+      max-width: 250px;
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #686868;
+    }
+    &-subtext {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-score {
+      font-size: 18px;
+      line-height: 25px;
+      color: #cb9c71;
+      font-family: Milio;
+    }
+    &-link {
+      text-decoration: none;
+      font-size: 12px;
+      text-decoration-line: underline;
+      color: #632831;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .dividends__analytics {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .dividends__container {
+    .dividends__analytics-wrap {
+      display: none;
+    }
+  }
+  .dividendes__text-mobile {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+    width: 300px;
   }
 }
