@@ -1694,11 +1694,44 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.05em;
-    color: #D09E70;
+    color: #d09e70;
     background: transparent;
     border: 2px solid #D09E70;
     width: 300px;
-    padding: 18px 84px; } }
+    padding: 18px 84px;
+    margin-bottom: 60px; }
+  .mobile__news-item {
+    margin-bottom: 44px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20px; }
+    .mobile__news-item .mobile__news_img-wrap {
+      display: flex;
+      margin-bottom: 14px; }
+      .mobile__news-item .mobile__news_img-wrap .mobile__news_img {
+        width: 30%;
+        margin-right: 10px; }
+      .mobile__news-item .mobile__news_img-wrap .mobile__news-title {
+        margin-bottom: 10px;
+        text-decoration-line: underline; }
+      .mobile__news-item .mobile__news_img-wrap .mobile__news-text {
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+        font-family: Helvetica; }
+    .mobile__news-item .mobile__news_subtext-link .mobile__news-subtext {
+      font-size: 12px;
+      line-height: 17px;
+      width: 300px;
+      color: #000000;
+      font-family: Helvetica; }
+    .mobile__news-item .mobile__news_subtext-link .mobile__news-link {
+      margin-left: 68%;
+      font-size: 12px;
+      line-height: 20px;
+      color: #cb9c71;
+      font-family: Helvetica;
+      text-decoration: none; } }
 
 .company__list {
   display: flex;
