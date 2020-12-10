@@ -267,4 +267,28 @@
   .account__link {
     display: none;
   }
+  .score__list {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .account__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+ 
+}
+@media screen and (max-width: 320px) {
+  .score__detailed {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 20px;
+  }
 }

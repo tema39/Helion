@@ -230,3 +230,10 @@
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .footer__conditions-list {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}

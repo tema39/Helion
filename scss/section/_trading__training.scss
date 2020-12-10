@@ -255,3 +255,25 @@
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .training__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .trading__subtext {
+    margin-bottom: 20px;
+  }
+  .trading__mobile-button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 20px;
+  }
+}

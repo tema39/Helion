@@ -3,19 +3,21 @@
   padding-top: 150px;
   padding-bottom: 50px;
 }
-
 .dividends__container {
   max-width: 970px;
   margin: 0px auto;
   position: relative;
 }
+.dividends__title {
+  margin-bottom: 30px;
+}
 .dividends__title::before {
   content: "";
   position: absolute;
-  width: 570px;
+  width: 695px;
   height: 2px;
-  right: -40px;
-  top: 28px;
+  right: -38px;
+  top: 16px;
   background-color: gainsboro;
 }
 .dividendes__text-mobile {
@@ -108,6 +110,7 @@
   .offer__list {
     list-style: none;
     display: flex;
+    margin-bottom: 50px;
 
     .offer__list-item:first-child {
       padding: 30px 30px 23px 31px;
@@ -164,6 +167,13 @@
       font-family: Arial, Helvetica, sans-serif;
     }
   }
+}
+
+.dividend__payments-mobile {
+  display: none;
+}
+.divideand__button {
+  display: none;
 }
 
 @media screen and (max-width: 1130px) {
@@ -528,5 +538,131 @@
     padding: 0px 10px;
     margin-bottom: 40px;
     width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dividends__title {
+    border-bottom: 2px solid #d09e70;
+    padding-bottom: 20px;
+  }
+  .special__offer-title {
+    border-bottom: 2px solid #d09e70;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dividend__payments-mobile {
+    border-radius: 5px;
+    border: 1px solid #d09e70;
+    width: 315px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .dividend__payments-title {
+    text-align: center;
+    background: #d09e70;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 17px;
+    padding: 25px 0px;
+    margin-bottom: 35px;
+  }
+  .dividend__payments__img-wrap {
+    text-align: center;
+  }
+  .dividend__payments-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 11px;
+
+    .dividend__payments-item:first-child {
+      margin-left: 38px;
+      margin-right: 66px;
+    }
+    .dividend__payments-item:nth-child(2) {
+      margin-right: 50px;
+    }
+  }
+  .dividend__payments-inner {
+    display: flex;
+    align-items: center;
+    padding: 0px 21px;
+    margin-bottom: 15px;
+
+    .payments__icon {
+      margin-right: 8px;
+    }
+    .payments__text {
+      font-size: 14px;
+      line-height: 23px;
+      color: #d09e70;
+    }
+  }
+  .dividend__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    border: 1px solid #d09e70;
+    background: #d09e70;
+    padding: 10px 0px;
+  }
+  .dividend__list {
+    list-style: none;
+    background: #ffffff;
+
+    .dividend__list-item {
+      border-bottom: 1px solid #f9f6f2;
+      background: #ffffff;
+      padding: 15px 10px 10px 10px;
+    }
+  }
+  .dividend__inner-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .dividend__inner-subtext {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dividend__item-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+  .dividend__item-subtext {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .red {
+    color: red;
+  }
+  .black {
+    font-weight: bold;
+  }
+  .gry {
+    color: #bdbdbd;
+  }
+  .divideand__button {
+    margin: 0px 28%;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    border: 1px solid #f9f6f2;
+    margin-bottom: 60px;
+    display: block;
+  }
+  .offer__button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 20px;
   }
 }

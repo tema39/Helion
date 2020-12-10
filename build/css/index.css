@@ -125,6 +125,9 @@
 .navigation__list-item:first-child .navigation__list-title {
   color: #e3a873; }
 
+.header__mobile-wrap {
+  display: none; }
+
 @media screen and (max-width: 1130px) {
   .header {
     justify-content: space-between; }
@@ -247,13 +250,16 @@
   margin: 0px auto;
   position: relative; }
 
+.dividends__title {
+  margin-bottom: 30px; }
+
 .dividends__title::before {
   content: "";
   position: absolute;
-  width: 570px;
+  width: 695px;
   height: 2px;
-  right: -40px;
-  top: 28px;
+  right: -38px;
+  top: 16px;
   background-color: gainsboro; }
 
 .dividendes__text-mobile {
@@ -329,7 +335,8 @@
 
 .special__offer-contianer .offer__list {
   list-style: none;
-  display: flex; }
+  display: flex;
+  margin-bottom: 50px; }
   .special__offer-contianer .offer__list .offer__list-item:first-child {
     padding: 30px 30px 23px 31px; }
   .special__offer-contianer .offer__list .offer__list-item:nth-child(2) {
@@ -375,6 +382,12 @@
     color: #632831;
     line-height: 17px;
     font-family: Arial, Helvetica, sans-serif; }
+
+.dividend__payments-mobile {
+  display: none; }
+
+.divideand__button {
+  display: none; }
 
 @media screen and (max-width: 1130px) {
   .dividends__container {
@@ -670,6 +683,106 @@
     margin-bottom: 40px;
     width: 300px; } }
 
+@media screen and (max-width: 375px) {
+  .dividends__title {
+    border-bottom: 2px solid #d09e70;
+    padding-bottom: 20px; }
+  .special__offer-title {
+    border-bottom: 2px solid #d09e70;
+    padding-bottom: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .dividend__payments-mobile {
+    border-radius: 5px;
+    border: 1px solid #d09e70;
+    width: 315px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block; }
+  .dividend__payments-title {
+    text-align: center;
+    background: #d09e70;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 17px;
+    padding: 25px 0px;
+    margin-bottom: 35px; }
+  .dividend__payments__img-wrap {
+    text-align: center; }
+  .dividend__payments-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 11px; }
+    .dividend__payments-list .dividend__payments-item:first-child {
+      margin-left: 38px;
+      margin-right: 66px; }
+    .dividend__payments-list .dividend__payments-item:nth-child(2) {
+      margin-right: 50px; }
+  .dividend__payments-inner {
+    display: flex;
+    align-items: center;
+    padding: 0px 21px;
+    margin-bottom: 15px; }
+    .dividend__payments-inner .payments__icon {
+      margin-right: 8px; }
+    .dividend__payments-inner .payments__text {
+      font-size: 14px;
+      line-height: 23px;
+      color: #d09e70; }
+  .dividend__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    border: 1px solid #d09e70;
+    background: #d09e70;
+    padding: 10px 0px; }
+  .dividend__list {
+    list-style: none;
+    background: #ffffff; }
+    .dividend__list .dividend__list-item {
+      border-bottom: 1px solid #f9f6f2;
+      background: #ffffff;
+      padding: 15px 10px 10px 10px; }
+  .dividend__inner-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px; }
+  .dividend__inner-subtext {
+    display: flex;
+    justify-content: space-between; }
+  .dividend__item-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000; }
+  .dividend__item-subtext {
+    font-size: 12px;
+    line-height: 14px; }
+  .red {
+    color: red; }
+  .black {
+    font-weight: bold; }
+  .gry {
+    color: #bdbdbd; }
+  .divideand__button {
+    margin: 0px 28%;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    border: 1px solid #f9f6f2;
+    margin-bottom: 60px;
+    display: block; }
+  .offer__button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid #D09E70;
+    width: 300px;
+    padding: 18px 20px; } }
+
 .account__container {
   padding-top: 50px;
   max-width: 970px;
@@ -890,7 +1003,27 @@
     .trading__style-container .score__list-item:last-child {
       display: none; }
   .account__link {
-    display: none; } }
+    display: none; }
+  .score__list {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 375px) {
+  .account__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .score__detailed {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid #D09E70;
+    width: 300px;
+    padding: 18px 20px; } }
 
 .trading__training {
   background: #f9f6f2; }
@@ -1100,6 +1233,25 @@
       color: #000000;
       font-family: Arial, Helvetica, sans-serif; } }
 
+@media screen and (max-width: 375px) {
+  .training__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .trading__subtext {
+    margin-bottom: 20px; }
+  .trading__mobile-button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid #D09E70;
+    width: 300px;
+    padding: 18px 20px; } }
+
 .market__news {
   background: #f9f6f2;
   padding-bottom: 100px; }
@@ -1252,7 +1404,8 @@
 
 @media screen and (max-width: 767px) {
   .market__news .market__list {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 20px; }
   .market__news .market__list-item {
     width: 90%; }
     .market__news .market__list-item .market__item-icon {
@@ -1266,6 +1419,25 @@
     padding-right: 0px; }
   .market__link {
     display: none; } }
+
+@media screen and (max-width: 375px) {
+  .markit__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .market__mobile-button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid #D09E70;
+    width: 300px;
+    padding: 18px 84px;
+    font-family: Helvetica; } }
 
 .company__news {
   background-color: #f9f6f2; }
@@ -1390,6 +1562,12 @@
         background: transparent;
         color: #ffffff; }
 
+.banner__title-mobile {
+  display: none; }
+
+.mobile__news-list {
+  display: none; }
+
 @media screen and (max-width: 1023px) {
   .company__news-title {
     display: flex;
@@ -1482,6 +1660,8 @@
           font-family: Arial, Helvetica, sans-serif; } }
 
 @media screen and (max-width: 767px) {
+  .company__news .company__news-container .news__list {
+    display: none; }
   .company__news .company__news-container .news__link {
     display: none; }
   .company__news .company__news-container .banner__finances-wrap .banner__title-buttons {
@@ -1495,13 +1675,30 @@
       margin-bottom: 18px;
       color: #ffffff;
       font-family: Milio;
-      text-align: center; }
+      text-align: center;
+      display: block; }
     .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__button {
       margin-right: 0px;
       max-width: unset;
       margin-bottom: 10px; }
     .company__news .company__news-container .banner__finances-wrap .banner__title-buttons .banner__button-finances {
       margin-right: 0px; } }
+
+@media screen and (max-width: 320px) {
+  .banner__title-mobile {
+    display: block; }
+  .mobile__news-list {
+    display: block; }
+  .mobile__button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid #D09E70;
+    width: 300px;
+    padding: 18px 84px; } }
 
 .company__list {
   display: flex;
@@ -1529,6 +1726,12 @@
         margin-right: 0px; }
     .company__list .company__item-img {
       width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .news__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%; } }
 
 .footer {
   background: #282a35;
@@ -1691,6 +1894,12 @@
       place-self: flex-end; }
       .footer .footer__attention-container .footer__attention-wrap .footer__img-logotip .footer__img {
         width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .footer__conditions-list {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 30px;
+    width: 100%; } }
 
 @font-face {
   font-family: "Millo";

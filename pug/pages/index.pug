@@ -67,6 +67,41 @@ body
         |Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
       p.dividendes__text-mobile 
         |Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
+      .dividend__payments-mobile
+        h3.dividend__payments-title До выплаты дивиденда осталось:
+        .dividend__payments__img-wrap
+          img.dividend__payments-img(src="./img/mobileTime.svg")
+        ul.dividend__payments-list
+          li.dividend__payments-item часов
+          li.dividend__payments-item минут
+          li.dividend__payments-item секунд
+        .dividend__payments-inner
+          img.payments__icon(src="./img/mibileEcsplore.svg")
+          p.payments__text Число выданных разрешений на строительство (май), US
+        h3.dividend__title Выплата дивидендов по CFDs 
+        ul.dividend__list
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#PG</span> / Procter&Gamble
+              p.dividend__item-text <span class="gry">One stock:</span> $0.717
+            .dividend__inner-subtext  
+              p.dividend__item-subtext 24 : 08 : 37 :  <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span>$717
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#AAPL</span> / Apple Inc.
+              p.dividend__item-text <span class="gry">One stock:</span> $0.73
+            .dividend__inner-subtext
+              p.dividend__item-subtext 24 : 08 : 37 :  <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span>$730
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#SBUX  </span>/ Starbuck Corporation
+              p.dividend__item-text <span class="gry">One stock:</span>$0.3
+            .dividend__inner-subtext
+              p.dividend__item-subtext 24 : 08 : 37 : <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span> $300
+      button.divideand__button ВСЕ КАТЕГОРИИ
       .dividends__analytics-wrap
         ul.dividends__list
           h3.dividends__list-title Дивиденды
@@ -134,6 +169,7 @@ body
             .offer__list-subtext
               p.offer__list-score до 16% на счет
               a.offer__list-link(href="") Получить
+        button.offer__button Подробнее
   section.trading__account
     .account__container
       .account__title-wrap
@@ -194,6 +230,7 @@ body
               li.item Депозит от $50 000
               li.item Валюта счета : EUR, USD.
             button.score__button открыть счет
+      button.score__detailed Подробнее
   section.trading__training
     .training__container
       .training__title-wrap
@@ -218,6 +255,7 @@ body
         |сделаем за Вас. Передайте себя в руки профессиональной команды
         |финансовых советников “Helion Capital” и шаг за шагом мы научим Вас
         |зарабатывать на финансовых рынках.
+      button.trading__mobile-button  Подробнее
   section.market__news
     .market__news-container
       .market__title-wrap
@@ -265,6 +303,7 @@ body
               p.market__content-subtext
                 |Среднее количество, ежедневно регистрирующихся торгов
                 |упало,примерно, вдвое по сравнению с декабрьскими...
+      butoon.market__mobile-button Больше Новостей
   section.company__news
     .company__news-container
       .company__news-title
@@ -297,6 +336,28 @@ body
             .news__date-wrap
               p.news__date 12.05.18
               a.news__links(href="") Подробнее...
+      ul.mobile__news-list 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news1.svg")
+          .mobile__news_title-wrap 
+            h3.mobile__news-title Официальные лица вогнали EUR...
+            p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news2.svg")
+          .mobile__news_title-wrap 
+            h3.mobile__news-title Младший брат Bitcoin - перспек...
+            p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+      button.mobile__button Больше Новостей
       .banner__finances-wrap
         .banner__title-buttons
           h2.banner__title
@@ -305,7 +366,7 @@ body
             |Готовы начать зарабатывать?
           button.banner__button Открыть счет
           button.banner__button.banner__button-finances
-            |Открыть Демо-Счет
+            |Открыть Демо-Счет  
   section.financial__company
     ul.company__list
       li.company__list-item

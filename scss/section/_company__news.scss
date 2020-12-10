@@ -154,7 +154,12 @@
     }
   }
 }
-
+.banner__title-mobile {
+  display: none;
+}
+.mobile__news-list {
+  display: none;
+}
 @media screen and (max-width: 1023px) {
   .company__news-title {
     display: flex;
@@ -273,13 +278,19 @@
 @media screen and (max-width: 767px) {
   .company__news {
     .company__news-container {
+      .news__list {
+        display: none;
+      }
+      .mobile__news-list {
+        
+      }
       .news__link {
         display: none;
       }
       .banner__finances-wrap {
         .banner__title-buttons {
-           padding: 20px 20px 20px 22px;
-           text-align: center;
+          padding: 20px 20px 20px 22px;
+          text-align: center;
 
           .banner__title {
             display: none;
@@ -291,6 +302,7 @@
             color: #ffffff;
             font-family: Milio;
             text-align: center;
+            display: block;
           }
           .banner__button {
             margin-right: 0px;
@@ -303,5 +315,24 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner__title-mobile {
+    display: block;
+  }
+  .mobile__news-list {
+    display: block;
+  }
+  .mobile__button {
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 84px;
   }
 }

@@ -37,3 +37,10 @@
         }
       }
 }
+@media screen and (max-width: 375px) {
+  .news__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
