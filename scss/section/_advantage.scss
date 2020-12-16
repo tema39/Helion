@@ -1,0 +1,302 @@
+.advantage {
+  width: 1024px;
+  margin: auto;
+  padding-top: 50px;
+
+  .advantage__title-wrap {
+    position: relative;
+    .advantage__title {
+      font-family: Milio;
+      font-size: 36px;
+      line-height: 53px;
+      color: #43191f;
+      margin-bottom: 30px;
+    }
+    .advantage__title::before {
+      content: "";
+      position: absolute;
+      width: 640px;
+      height: 2px;
+      background-color: #dfdfdf;
+      top: 30px;
+      left: 36%;
+    }
+  }
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .advantage__list-item {
+      width: 50%;
+      margin-bottom: 30px;
+
+      .advantage__item-title {
+        font-family: Milio;
+        font-size: 24px;
+        line-height: 35px;
+        color: #d09e70;
+        margin-bottom: 10px;
+      }
+      .advantage__item-text {
+        color: #000000;
+      }
+    }
+    .advantage__button {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      background: #d09e70;
+      border: 1px solid;
+      width: 500px;
+      padding: 18px 36px;
+    }
+  }
+  .advantage__mobile-list {
+    display: none;
+  }
+  .advantage__mobile-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .advantage {
+    width: unset;
+    background-color: #f9f6f2;
+
+    .advantage__title-wrap {
+      position: relative;
+
+      .advantage__title {
+        font-family: Milio;
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #d09e70;
+        max-width: 350px;
+        width: 100%;
+        margin-left: 10px;
+        padding-bottom: 20px;
+      }
+      .advantage__title::before {
+        content: "";
+        position: absolute;
+        width: 640px;
+        height: 2px;
+        background-color: #dfdfdf;
+        top: 30px;
+        left: 36%;
+        display: none;
+      }
+    }
+    .advantage__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      align-items: center;
+
+      .advantage__list-item {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 0px 3px;
+
+        .advantage__item-title {
+          font-family: Milio;
+          font-size: 24px;
+          line-height: 35px;
+          color: #d09e70;
+          margin-bottom: 10px;
+        }
+        .advantage__item-text {
+          color: #000000;
+        }
+      }
+      .advantage__button {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        background: #d09e70;
+        border: 1px solid;
+        width: 500px;
+        padding: 18px 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantage {
+    width: unset;
+    background-color: #f9f6f2;
+
+    .advantage__title-wrap {
+      position: relative;
+
+      .advantage__title {
+        font-family: Milio;
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #d09e70;
+        max-width: 350px;
+        width: 100%;
+        margin-left: 10px;
+        padding-bottom: 20px;
+      }
+      .advantage__title::before {
+        content: "";
+        position: absolute;
+        width: 640px;
+        height: 2px;
+        background-color: #dfdfdf;
+        top: 30px;
+        left: 36%;
+        display: none;
+      }
+    }
+    .advantage__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      align-items: center;
+
+      .advantage__list-item {
+        width: 50%;
+        margin-bottom: 30px;
+
+        .advantage__item-title {
+          font-family: Milio;
+          font-size: 24px;
+          line-height: 35px;
+          color: #d09e70;
+          margin-bottom: 10px;
+        }
+        .advantage__item-text {
+          color: #000000;
+        }
+      }
+      .advantage__button {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        background: #d09e70;
+        border: 1px solid;
+        width: 100%;
+        padding: 18px 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .advantage {
+    width: unset;
+    background-color: #f9f6f2;
+    padding-bottom: 60px;
+
+    .advantage__title-wrap {
+      position: relative;
+
+      .advantage__title {
+        font-family: Milio;
+        font-size: 26px;
+        line-height: 30px;
+        color: #43191f;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #d09e70;
+        max-width: 290px;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+      .advantage__title::before {
+        content: "";
+        position: absolute;
+        width: 640px;
+        height: 2px;
+        background-color: #dfdfdf;
+        top: 30px;
+        left: 36%;
+        display: none;
+      }
+    }
+    .advantage__list {
+      display: none;
+      flex-wrap: wrap;
+      list-style: none;
+      align-items: center;
+
+      .advantage__list-item {
+        width: 50%;
+        margin-bottom: 30px;
+
+        .advantage__item-title {
+          font-family: Milio;
+          font-size: 24px;
+          line-height: 35px;
+          color: #d09e70;
+          margin-bottom: 10px;
+        }
+        .advantage__item-text {
+          color: #000000;
+        }
+      }
+      .advantage__button {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        background: #d09e70;
+        border: 1px solid;
+        width: 100%;
+        padding: 18px 36px;
+      }
+    }
+    .advantage__mobile-list {
+      display: block;
+      list-style: none;
+      padding: 0px 30px;
+      padding-bottom: 30px;
+
+      .advantage__mobile-item::before {
+        content: "";
+        position: absolute;
+        background-color: #d09e70;
+        height: 5px;
+        width: 5px;
+        top: 10px;
+        left: -15px;
+      }
+      .advantage__mobile-item {
+        margin-bottom: 10px;
+        position: relative;
+
+        .advantage__mobile-link {
+          font-family: Helvetica;
+          font-size: 16px;
+          line-height: 26px;
+          color: #000000;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+    }
+    .advantage__mobile-button {
+      display: block;
+      margin-top: 30px;
+      padding: 18px 30px;
+      width: 300px;
+      margin: 0px 3%;
+      font-family: Helvetica;
+      font-size: 14px;
+      line-height: 14px;
+      color: #d09e70;
+      background: transparent;
+      border: 2px solid #d09e70;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+include ../components/head.pug
+body
+  header.header
+    .header__logotip
+      img.logotip__img(src="./img/GroupLogotip.svg")
+    .header__info-wrap
+      .header__information
+        ul.info__list
+          li.info__list-item
+            a.info__list-link(href="./about.html") Web-терминал
+          li.info__list-item
+            a.info__list-link(href="./bonus.html") Контакты
+          li.info__list-item.item
+            a.info__list-link(href="") FAQ
+        .authorizations
+          a.authorizations__link(href="") Регистрация
+          a.authorizations__link.enter(href="") Войти
+        .header__call
+          button.header__call-button Перезвоните мне
+          .changing__language
+            button.changing__language-button.ru RU
+            button.changing__language-button.en EN
+      ul.navigation__list
+        li.navigation__list-item
+          h3.navigation__list-title О компании
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Торговля
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Аналитика
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Бонусы
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Партнерство
+    .header__mobile-wrap  
+      img.header__mobile-icon(src="./img/mobileClick.svg")
+  section.bonus
+    h1.bonus__title Welcome bonus
+    ul.categori__list
+      li.categori__list-item
+          img.categori__icon(src="./img/GroupItems.svg")
+          a.categori__link(href="") Защита средств  
+      li.categori__list-item
+          img.categori__icon(src="./img/laptopLaunchItems.svg")
+          a.categori__link(href="") Быстрый старт 
+      li.categori__list-item
+          img.categori__icon(src="./img/imacclickIyems.svg")
+          a.categori__link(href="") Аналитика рынка  
+      li.categori__list-item
+          img.categori__icon(src="./img/$$Price.svg")
+          a.categori__link.link(href="") Различные Бонусы
+  section.tools
+    .tool__title-wrap
+      h2.tool__title Инструменты
+      p.tool__text Помимо валютных пар существует значительное колличество инструментов, которые позволяют извлекать ощутимую прибыль, несмотря на их более низкую волатильность.
+        <br>За исключением 54 валютных пар, у Вас имеется возможность торговать по 72 инструментам CFD (нефть, газ, сельхозтовары, цветные металлы, акции, индексы, криптовалюты) на особенно выгодных для Вас условиях.
+      p.tool__mobile-text Существуют активы, которые меняются с меньшей интенсивностью, нежели валюты, но при этом также позволяют получать ощутимую прибыль.
+      p.tool__mobile-text Помимо 54 валютных пар, у вас имеется возможность торговли по 72 инструментам CFD (нефть, цветные металлы, акции, индексы),золотом и серебром, а также Биткоином на наиболее выгодных для вас условиях
+    ul.tools__list
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/Forex.svg")
+          h3.tools__title Forex
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/bitcoin (1).svg")
+          h3.tools__title Криптовалюты
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/oil-platform.svg")
+          h3.tools__title Нефть и газ
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/statistics.svg")
+          h3.tools__title Акции
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/ecology.svg")
+          h3.tools__title Сельхозтовары
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/gold-bars.svg")
+          h3.tools__title Металлы
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/statistics (2).svg")
+          h3.tools__title Индексы
+      li.tools__list-item
+        .tools__item-wrap
+          img.tool__img(src="./img/Union.svg")
+          h3.tools__title Открыть счет
+  section.company__news
+    .company__news-container
+      ul.mobile__news-list 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news1.svg")
+            .mobile__news_title-wrap 
+              h3.mobile__news-title Официальные лица вогнали EUR...
+              p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news2.svg")
+            .mobile__news_title-wrap 
+              h3.mobile__news-title Младший брат Bitcoin - перспек...
+              p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+      .banner__finances-wrap
+        .banner__title-buttons
+          h2.banner__title
+            |Готовы начать зарабатывать на финансовых рынках?
+          h2.banner__title-mobile 
+            |Готовы начать зарабатывать?
+          button.banner__button Открыть счет
+          button.banner__button.banner__button-finances
+            |Открыть Демо-Счет  
+  footer.footer
+    .footer__container
+      .footer__logo-wrap
+        img.footer__logo-img(src="./img/LogotipFooter.svg")
+      ul.footer__list
+        li.footer__list-item
+          a.footer__list-link.list__link(href="") О компании
+        li.footer__list-item
+          a.footer__list-link(href="") Аналитика
+        li.footer__list-item
+          a.footer__list-link(href="") Партнерство
+        li.footer__list-item
+          a.footer__list-link(href="") Торговля
+        li.footer__list-item
+          a.footer__list-link(href="") Бонусы
+        li.footer__list-item
+          a.footer__list-link(href="") FAQ
+      ul.footer__conditions-list
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Условия использования сайта
+        li.footer__conditions-item
+          a.footer__conditions-link.conditions-link(href="") Заявление о раскрытии рисков
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Борьба с лег-й преступных доходов
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Политика конфиденциальности
+      ul.list__payment-option
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/Qiww.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/WebManey.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/MasterCard.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/3D Secure.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/SSLsecured.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/VISA.svg")
+    .footer__attention-container
+      .footer__attention-wrap
+        p.footer__attention-text
+          |Компания “Helion Capital” предупреждает: торговля на финансовых рынках
+          |позволяет извлекать неограниченное количество доходности которая, в
+          |свою очередь, несет высокие риски. Спекулятивная торговля с
+          |использованием маржинальных инструментов подходит не для каждого
+          |инвестора, перед началом торговли настоятельно рекомендуем убедиться в
+          |том, что Ваш опыт, размер риска, уровень дохода, свободные средства,
+          |инвестиционные задачи и др. соответствует данному виду деятельности.
+        .footer__img-logotip
+          img.footer__img(src="./img/logoSho.svg")
+  

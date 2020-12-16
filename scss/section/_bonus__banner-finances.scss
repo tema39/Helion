@@ -1,0 +1,42 @@
+.company__news {
+  padding-top: 116px;
+  padding-bottom: 20px;
+
+  .company__news-container {
+    .banner__finances-wrap {
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .company__news {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    .company__news-container {
+      .banner__finances-wrap {
+        .banner__title-buttons {
+          .banner__title-mobile {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .mobile__news-list {
+    display: none;
+  }
+  .company__news {
+    padding-top: 40px;
+    .company__news-container {
+      .banner__finances-wrap {
+        .banner__title-buttons {
+          .banner__title-mobile {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

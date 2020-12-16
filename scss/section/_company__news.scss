@@ -160,6 +160,9 @@
 .mobile__news-list {
   display: none;
 }
+.mobile__button {
+  display: none;
+}
 @media screen and (max-width: 1023px) {
   .company__news-title {
     display: flex;
@@ -281,8 +284,6 @@
       .news__list {
         display: none;
       }
-      .mobile__news-list {
-      }
       .news__link {
         display: none;
       }
@@ -324,6 +325,7 @@
     display: block;
   }
   .mobile__button {
+    display: block;
     margin: 0px 3%;
     font-size: 14px;
     line-height: 14px;

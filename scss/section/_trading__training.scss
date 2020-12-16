@@ -66,6 +66,9 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 }
+.trading__mobile-button {
+  display: none;
+}
 
 @media screen and (max-width: 1023px) {
   .training__container {
@@ -266,6 +269,7 @@
     margin-bottom: 20px;
   }
   .trading__mobile-button {
+    display: block;
     margin: 0px 3%;
     font-size: 14px;
     line-height: 14px;

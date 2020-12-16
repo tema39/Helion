@@ -168,11 +168,13 @@
     }
   }
 }
-
 .dividend__payments-mobile {
   display: none;
 }
 .divideand__button {
+  display: none;
+}
+.offer__button {
   display: none;
 }
 
@@ -650,11 +652,12 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
-    border: 1px solid #f9f6f2;
+    border: 1px solid ;
     margin-bottom: 60px;
     display: block;
   }
   .offer__button {
+    display: block;
     margin: 0px 3%;
     font-size: 14px;
     line-height: 14px;

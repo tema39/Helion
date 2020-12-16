@@ -1,0 +1,18 @@
+.header__mobile-button {
+  display: none;
+}
+@media screen and (max-width: 1130px) {
+  .header {
+    display: flex;
+    align-items: center;
+    .header__mobile-button {
+      display: block;
+      margin-right: 10px;
+
+      .mobile__botton {
+        background: transparent;
+        border:1px solid #43191F;
+      }
+    }
+  }
+}

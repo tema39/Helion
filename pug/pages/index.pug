@@ -9,7 +9,7 @@ body
           li.info__list-item
             a.info__list-link(href="./about.html") Web-терминал
           li.info__list-item
-            a.info__list-link(href="") Контакты
+            a.info__list-link(href="./bonus.html") Контакты
           li.info__list-item.item
             a.info__list-link(href="") FAQ
         .authorizations
@@ -55,7 +55,7 @@ body
         img.catigori__finances-img(src="./img/laptopLaunchItems.svg")
         h3.catigori__finances-title.title-two Быстрый старт
       li.catigori__finances-item
-        .img.catigori__finances-img(src="./img/imacclickIyems.svg")
+        img.catigori__finances-img(src="./img/imacclickIyems.svg")
         h3.catigori__finances-title Аналитика рынка
       li.catigori__finances-item
         img.catigori__finances-img(src="./img/VectorLupa.svg")
@@ -230,7 +230,13 @@ body
               li.item Депозит от $50 000
               li.item Валюта счета : EUR, USD.
             button.score__button открыть счет
-      button.score__detailed Подробнее
+        .score__slider 
+            button.mobile__button-slaider
+              img.score__mobile-icon(src="./img/Vector__Stroke.svg")
+        .score__slider-buttons
+          button.slider__buttons 
+            img.slider__buttons-icon(src="./img/Ellipse_Slider.svg")
+      button.score__mobile-detailed Подробнее
   section.trading__training
     .training__container
       .training__title-wrap
