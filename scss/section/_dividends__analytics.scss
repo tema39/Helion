@@ -1,3 +1,4 @@
+$background__color-white: white;
 .dividends__analytics {
   background: #f9f6f2;
   padding-top: 150px;
@@ -130,7 +131,11 @@
       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
       max-width: 320px;
       width: 100%;
-      background: #ffffff;
+      background: $background__color-white;
+
+      &:hover{
+        border: 10px solid #cb9c71;
+      }
     }
     &-title {
       font-size: 24px;

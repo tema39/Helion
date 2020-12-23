@@ -1,5 +1,20 @@
 include ../components/head.pug
+
 body
+  .wrapper  
+    .slider__container
+      .slider__track
+        .slider__item
+        .slider__item
+        .slider__item
+        .slider__item
+        .slider__item
+        .slider__item
+        .slider__item
+        .slider__item
+    .slider__buttons
+      button.btn__prev prev
+      button.btn__next next
   header.header
     .header__logotip
       img.logotip__img(src="./img/GroupLogotip.svg")
@@ -230,12 +245,28 @@ body
               li.item Депозит от $50 000
               li.item Валюта счета : EUR, USD.
             button.score__button открыть счет
-        .score__slider 
-            button.mobile__button-slaider
-              img.score__mobile-icon(src="./img/Vector__Stroke.svg")
-        .score__slider-buttons
-          button.slider__buttons 
-            img.slider__buttons-icon(src="./img/Ellipse_Slider.svg")
+          li.score__list-item
+            .score__item-title
+              .score__item-img
+                img.score__img(src="./img/platinumEmblema.svg")
+              .score__title-wrap
+                h3.score__title Bitcoin
+                p.score__title-description
+                  |Для требовательных трейдеров предпочитающих комфорт и
+                  |качественное обслуживание
+            ul.list__item-score
+              li.item Плавающий спред от 1 пункта
+              li.item Ставка 16% годовых или 1,33%месяц
+              li.item Личный советник 24/7
+              li.item Бесплатное обучение, мастер-классы
+              li.item Депозит от $50 000
+              li.item Валюта счета : EUR, USD.
+            button.score__button открыть счет
+      .slider__continer-btn
+        button.btn__Next
+          img.btn__icon(src="./img/Vector__Stroke.svg")
+        button.btn__Prev
+          img.btn__icon(src="./img/Vector__Stroke.svg")
       button.score__mobile-detailed Подробнее
   section.trading__training
     .training__container
@@ -447,3 +478,7 @@ body
           |инвестиционные задачи и др. соответствует данному виду деятельности.
         .footer__img-logotip
           img.footer__img(src="./img/logoSho.svg")
+  script(src="../../index.js")
+  
+  
+

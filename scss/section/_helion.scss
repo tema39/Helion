@@ -27,7 +27,6 @@
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .catigori__finances-list {
   position: absolute;
   display: flex;
@@ -96,6 +95,36 @@
     text-decoration-line: underline;
     max-width: 110px;
   }
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.slider__container {
+  overflow: hidden;
+  background-color: pink;
+}
+.slider__track {
+  display: flex;
+  background-color: yellow;
+  transition: .2s;
+}
+.slider__item {
+  height: 100px;
+  min-width: 200px;
+}
+.slider__item:nth-child(3n + 1) {
+  background-color: red;
+}
+.slider__item:nth-child(3n + 2) {
+  background-color: green;
+}
+.slider__item:nth-child(3n + 3) {
+  background-color: blue;
+}
+.slider__buttons {
+  text-align: center;
 }
 
 @media screen and (max-width: 1130px) {
