@@ -2707,7 +2707,8 @@
   background-color: #f9f6f2;
   padding-top: 115px; }
   .tools .tool__title-wrap {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0px auto;
     padding-bottom: 67px; }
     .tools .tool__title-wrap .tool__title {
@@ -2721,7 +2722,8 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 650px;
+      max-width: 650px;
+      width: 100%;
       background-color: gainsboro;
       top: 50%;
       left: 36%; }
@@ -2733,7 +2735,8 @@
     .tools .tool__title-wrap .tool__mobile-text {
       display: none; }
   .tools .tools__list {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -2774,6 +2777,24 @@
           line-height: 29px;
           color: #632831; }
 
+@media screen and (max-width: 1024px) {
+  .tools .tool__title-wrap .tool__title {
+    position: relative;
+    font-family: Milio;
+    font-size: 36px;
+    line-height: 53px;
+    color: #43191f;
+    margin-bottom: 50px; }
+  .tools .tool__title-wrap .tool__title::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    max-width: 400px;
+    width: 100%;
+    background-color: gainsboro;
+    top: 50%;
+    left: 36%; } }
+
 @media screen and (max-width: 768px) {
   .tools {
     background-color: #f9f6f2;
@@ -2798,7 +2819,8 @@
         position: absolute;
         height: 2px;
         display: none;
-        width: 650px;
+        max-width: 650px;
+        width: 100%;
         background-color: gainsboro;
         top: 50%;
         left: 36%; }
@@ -2961,7 +2983,8 @@
     background: white;
     padding: 40px 0px 40px 36px;
     top: 85%;
-    left: 23%;
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: center;
     width: 1024px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); }
@@ -3005,8 +3028,8 @@
       border: 1px solid white;
       background: white;
       padding: 40px 0px 40px 36px;
-      top: 85%;
-      left: 14%;
+      left: 50%;
+      transform: translateX(-50%);
       justify-content: center;
       width: 1024px;
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); }
@@ -3051,7 +3074,8 @@
       background: white;
       padding: 40px 0px 40px 36px;
       top: 85%;
-      left: 14%;
+      left: 50%;
+      transform: translateX(-50%);
       justify-content: center;
       width: 1024px;
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); }

@@ -3,7 +3,8 @@
   padding-top: 115px;
 
   .tool__title-wrap {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0px auto;
     padding-bottom: 67px;
 
@@ -19,7 +20,8 @@
       content: "";
       position: absolute;
       height: 2px;
-      width: 650px;
+      max-width: 650px;
+      width: 100%;
       background-color: gainsboro;
       top: 50%;
       left: 36%;
@@ -35,7 +37,8 @@
     }
   }
   .tools__list {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +96,30 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .tools {
+    .tool__title-wrap {
+      .tool__title {
+        position: relative;
+        font-family: Milio;
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        margin-bottom: 50px;
+      }
+      .tool__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        max-width: 400px;
+        width: 100%;
+        background-color: gainsboro;
+        top: 50%;
+        left: 36%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .tools {
     background-color: #f9f6f2;
@@ -120,7 +147,8 @@
         position: absolute;
         height: 2px;
         display: none;
-        width: 650px;
+        max-width: 650px;
+        width: 100%;
         background-color: gainsboro;
         top: 50%;
         left: 36%;
@@ -290,7 +318,6 @@
         }
         &:nth-child(8) {
           border-top: 2px solid gainsboro;
-          
         }
 
         .tools__item-wrap {
