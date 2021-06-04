@@ -1,0 +1,249 @@
+.market__news {
+  background: #f9f6f2;
+  padding-bottom: 100px;
+}
+.market__news-container {
+  max-width: 1024px;
+  margin: auto;
+
+  .market__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+
+    .markit__title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio;
+    }
+    .markit__title::before {
+      content: "";
+      position: absolute;
+      width: 580px;
+      height: 2px;
+      right: 160px;
+      top: 25px;
+      background-color: #d09e70;
+    }
+    .market__link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #43191f;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .market__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      display: flex;
+      position: relative;
+      width: 50%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 2px;
+        right: 45px;
+        top: 30px;
+        background-color: #e9e8e8;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 44px;
+      }
+      .market__item-icon {
+        margin-right: 16px;
+      }
+      .market__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between;
+
+        .market__content-title {
+          font-size: 18px;
+          line-height: 26px;
+          color: #43191f;
+          font-family: Milio;
+        }
+        .color {
+          color: #d09e70;
+          text-decoration-line: underline;
+        }
+        .market__content-text {
+          font-size: 12px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .market__content-subtext {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}
+.market__mobile-button {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .market__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 0px 10px;
+
+    .markit__title {
+      font-size: 36px;
+      line-height: 51px;
+      color: #43191f;
+      font-family: Milio;
+    }
+    .markit__title::before {
+      content: "";
+      position: absolute;
+      width: 580px;
+      height: 2px;
+      right: 160px;
+      top: 25px;
+      background-color: #d09e70;
+      display: none;
+    }
+    .market__link {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #43191f;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .market__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+
+    &-item {
+      display: flex;
+      position: relative;
+      width: 50%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 380px;
+        height: 2px;
+        right: 45px;
+        top: 30px;
+        background-color: #e9e8e8;
+        display: none;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 44px;
+      }
+      .market__item-icon {
+        margin-right: 16px;
+      }
+      .market__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between;
+
+        .market__content-title {
+          font-size: 18px;
+          line-height: 26px;
+          color: #43191f;
+          font-family: Milio;
+        }
+        .color {
+          color: #d09e70;
+          text-decoration-line: underline;
+        }
+        .market__content-text {
+          font-size: 12px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .market__content-subtext {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  .news__list {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .market__news {
+
+    .market__list {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .market__list-item {
+      width: 90%;
+
+      .market__item-icon {
+        margin-right: 10px;
+      }
+    }
+    .market__content-wrap {
+
+      .market__content {
+        margin-bottom: 0px;
+      }
+    }
+   .market__content-subtext {
+     margin-bottom: 30px;
+     color: #000000;
+   }
+   .market__list-item:nth-child(odd) {
+     padding-right: 0px;
+   }
+  }
+  .market__link {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .markit__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .market__mobile-button {
+    display: block;
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 0px;
+    text-align: center;
+    font-family: Helvetica;
+  }
+}

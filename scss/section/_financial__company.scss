@@ -1,0 +1,46 @@
+
+.company__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 85px 10px 50px 10px;
+
+  &-item {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .company__item-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+    .company__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 85px 10px 50px 10px;
+      
+        &-item {
+          margin-right: 19px;
+      
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+        .company__item-img {
+          width: 100%;
+        }
+      }
+}
+@media screen and (max-width: 375px) {
+  .news__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}

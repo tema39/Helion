@@ -1,44 +1,151 @@
 .helion {
   background-image: url("..//../img/topslide1.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
+  background-size: 100% 100%;
+  height: 466px;
+  position: relative;
 }
 .helion__capital-wrap {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-  .helion__title {
-    font-size: 64px;
-    line-height: 78px;
-    color: #f9f6f2;
-    max-width: 446px;
-    margin-bottom: 11px;
-  }
-  .helion__text {
-    max-width: 500px;
-    font-size: 16px;
-    line-height: 22px;
-    color: #ffffff;
-  }
+  padding-top: 160px;
+  display: flex;
+  width: 984px;
+  margin: 0px auto;
+  flex-direction: column;
 }
 
+.helion__title {
+  font-size: 64px;
+  line-height: 78px;
+  color: #f9f6f2;
+  max-width: 446px;
+  font-family: Milio;
+}
+.helion__text {
+  max-width: 500px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .catigori__finances-list {
   position: absolute;
   display: flex;
-  border: 2px solid red;
-  max-width: 1024px;
-  width: 100%;
-  bottom: 70px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translateX(-48%);
+  width: 1024px;
+  justify-content: center;
+  bottom: -100px;
   background-color: white;
-  padding: 40px 36px;
-  
- .catigori__finances-item {
-     display: flex;
-     align-items: center;
- }
- .catigori__finances-img {
-     margin-right: 30px;
- }
+  padding: 40px 13px 40px 36px;
+
+  .catigori__finances-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 57px;
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      right: -20px;
+      width: 2px;
+      height: 80px;
+      background-color: gainsboro;
+    }
+    &:nth-child(2) {
+      margin-right: 65px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -32px;
+        width: 2px;
+        height: 80px;
+        background-color: gainsboro;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 33px;
+      &::before {
+        content: "";
+        position: absolute;
+        right: -2px;
+        width: 2px;
+        height: 80px;
+        background-color: gainsboro;
+      }
+    }
+    &:last-child {
+      margin: 0px;
+    }
+  }
+  .catigori__finances-img {
+    margin-right: 30px;
+  }
+  .catigori__finances-title {
+    max-width: 150px;
+    font-family: Milio;
+  }
+  .title {
+    max-width: 110px;
+  }
+  .title-two {
+    text-decoration-line: underline;
+    max-width: 110px;
+  }
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.slider__container {
+  overflow: hidden;
+  background-color: pink;
+}
+.slider__track {
+  display: flex;
+  background-color: yellow;
+  transition: .2s;
+}
+.slider__item {
+  height: 100px;
+  min-width: 200px;
+}
+.slider__item:nth-child(3n + 1) {
+  background-color: red;
+}
+.slider__item:nth-child(3n + 2) {
+  background-color: green;
+}
+.slider__item:nth-child(3n + 3) {
+  background-color: blue;
+}
+.slider__buttons {
+  text-align: center;
+}
+
+@media screen and (max-width: 1130px) {
+  .catigori__finances-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .helion__capital-wrap {
+    padding-top: 160px;
+    display: flex;
+    width: 750px;
+    margin: 0px auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .helion {
+    display: none;
+  }
+  .dividends__analytics {
+    padding-top: 20px;
+  }
 }

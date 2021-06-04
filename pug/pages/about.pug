@@ -1,0 +1,191 @@
+include ../components/head.pug
+body
+  header.header
+    .header__logotip
+      img.logotip__img(src="./img/GroupLogotip.svg")
+    .header__info-wrap
+      .header__information
+        ul.info__list
+          li.info__list-item
+            a.info__list-link(href="./about.html") Web-терминал
+          li.info__list-item
+            a.info__list-link(href="") Контакты
+          li.info__list-item.item
+            a.info__list-link(href="") FAQ
+        .authorizations
+          a.authorizations__link(href="") Регистрация
+          a.authorizations__link.enter(href="") Войти
+        .header__call
+          button.header__call-button Перезвоните мне
+          .changing__language
+            button.changing__language-button.ru RU
+            button.changing__language-button.en EN
+      ul.navigation__list
+        li.navigation__list-item
+          h3.navigation__list-title О компании
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Торговля
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Аналитика
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Бонусы
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Партнерство
+    .header__mobile-button  
+      button.mobile__botton 
+        img.mobile__img(src="./img/mobileClick.svg") 
+  section.company__contents
+    .company__title-wrap
+      h1.company__title О компании 
+      p.company__text 
+        |Одно из главных преимуществ инвестиционного брокера
+        <br>"Helion Capital" - гарантированная выплата дивидендов. 
+    ul.company__list  
+      li.company__list-item
+        .company__icon-wrap
+          img.company__icon(src="./img/GroupItems.svg")
+        a.company__link(href="")
+          p.company__link-text Защита
+            <br>средств
+      li.company__list-item 
+        .company__icon-wrap
+          img.company__icon(src="./img/laptopLaunchItems.svg")
+        a.company__link(href="")
+          p.company__link-text Быстрый
+            <br>старт
+      li.company__list-item
+        .company__icon-wrap 
+          img.company__icon(src="./img/imacclickIyems.svg")
+        a.company__link(href="")
+          p.company__link-text Аналитика
+            <br>рынка 
+      li.company__list-item
+        .company__icon-wrap 
+          img.company__icon(src="./img/$$Price.svg")
+        a.company__link(href="")
+          p.company__link-text Различные <br>Бонусы 
+  section.about__company
+    .about__company-continer
+      .about__company-title-wrap 
+        h2.about__company-title О компании
+      .about__company-description 
+        p.about__company-text “Helion Capital” - это инвестиционный брокер, основанный в 2008 году в Соединенном Королевстве, предоставляющий высококачественные сервисные услуги в направлении интернет-трейдинга для клиентов по всему миру.
+          |На сегодняшний день компания входит в десятку лучших 
+          |инвестиционных брокеров мира, о чем свидетельствуют 
+          |более 5 международных наград за достижения в финансовой сфере.
+          <br>“Helion Capital” оказывает онлайн-поддержку в более чем 110 различных странах мира, включая Россию, Казахстан, Украину и другие страны Европы, Латинской Америки и Азии.
+        .about__company-img 
+          img.about__img(src="./img/aboutCompany.png")
+      .about__company-mobile-description
+        p.about__company-text-mobile “Helion Capital” - это инвестиционный брокер, основанный в 2007 году в Швейцарии, предоставляющий высококачественные сервисные услуги в направлении интернет-трейдинга для клиентов по всему миру. 
+        p.about__company-text-mobile  На сегодняшний день компания входит в десятку лучших инвестиционных брокеров мира, о чем видетельствуют более 15 международных наград за достижения в финансовой сфере. “Helion Capital” оказывает онлайн-поддержку в более чем 110 различных странах мира, включая Россию, Казахстан, Украину и другие страны.
+  section.advantage
+    .advantage__title-wrap 
+      h2.advantage__title Наши преимущества
+    ul.advantage__list
+      li.advantage__list-item
+        h3.advantage__item-title Безупречная репутация
+        p.advantage__item-text С самого основания компании мы всегда стремимся к 
+          |совершенству, чтобы обеспечить компании успех в долгосрочной перспективе. Международные награды, устойчивость в периоды сложных экономических и политических кризисов, лицензии и рейтинги - помогают нам завоевывать доверие наших инвесторов и трейдеров.
+      li.advantage__list-item
+        h3.advantage__item-title Актуальные торговые стратегии
+        p.advantage__item-text Наша аналитическая команда всегда старается помочь каждому разобраться в тонкостях финансового рынка и подобрать наиболее доходную и безопасную торговую стратегию.
+          |Для этого наш собственный аналитический центр ежедневно детально обрабатывает круглосуточные ленты новостей Bloomberg, Dow Jones, Reuters, ТАСС .
+      li.advantage__list-item
+        h3.advantage__item-title Индивидуальный сервис
+        p.advantage__item-text Мы предоставляем Вам личного финансового советника, который поможет Вам подобрать индивидуальные торговые решения согласно Вашим целям, станет личным консультантом по инвестициям, поможет избежать ненужных рисков, подберет стратегию поведения и подходящие финансовые продукты.
+      li.advantage__list-item
+        h3.advantage__item-title Внушительный набор инструментов
+        p.advantage__item-text Будучи нашим клиентом, Вы получите доступ к нескольким типам торговых счетов с широчайшим выбором инструментов: CFD контракты на валютные пары, акции, индексы, товары и сырье, криптовалюту, а так же получите возможность выбрать торговый терминал: Metatrader 4, TradeMux.
+      li.advantage__list-item
+        h3.advantage__item-title Защита торговых средств клиента
+        p.advantage__item-text Ни для кого не секрет, что Соединенное Королевство является всемирно признанным финансовым центром, а хранить деньги в Европейской компании - это символ высокого престижа. Компания использует сегрегированные счета, то есть средства клиента хранятся отдельно от средств брокера, что обеспечивает клиенту дополнительную безопасность.
+      button.advantage__button Начать зарабатывать вместе с нами
+    ul.advantage__mobile-list 
+      li.advantage__mobile-item 
+        a.advantage__mobile-link(href="") Безупречная репутация;
+      li.advantage__mobile-item 
+        a.advantage__mobile-link(href="") Актуальные торговые стратегии;
+      li.advantage__mobile-item 
+        a.advantage__mobile-link(href="") Индивидуальный сервис;
+      li.advantage__mobile-item 
+        a.advantage__mobile-link(href="") Внушительный набор инструментов;
+      li.advantage__mobile-item 
+        a.advantage__mobile-link(href="") Защита торговых средств клиента.
+    button.advantage__mobile-button Начать зарабатывать
+  section.company__news-about
+    .company__news-container
+      .banner__finances-wrap
+        .banner__title-buttons
+          h2.banner__title
+            |Готовы начать зарабатывать на финансовых рынках?
+          h2.banner__title-mobile 
+            |Готовы начать зарабатывать?
+          button.banner__button-mobile Открыть Демо-Счет
+          button.banner__button-mobile.banner__button-finances-mobile
+            |Открыть Счет
+  footer.footer
+    .footer__container
+      .footer__logo-wrap
+        img.footer__logo-img(src="./img/LogotipFooter.svg")
+      ul.footer__list
+        li.footer__list-item
+          a.footer__list-link.list__link(href="") О компании
+        li.footer__list-item
+          a.footer__list-link(href="") Аналитика
+        li.footer__list-item
+          a.footer__list-link(href="") Партнерство
+        li.footer__list-item
+          a.footer__list-link(href="") Торговля
+        li.footer__list-item
+          a.footer__list-link(href="") Бонусы
+        li.footer__list-item
+          a.footer__list-link(href="") FAQ
+      ul.footer__conditions-list
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Условия использования сайта
+        li.footer__conditions-item
+          a.footer__conditions-link.conditions-link(href="") Заявление о раскрытии рисков
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Борьба с лег-й преступных доходов
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Политика конфиденциальности
+      ul.list__payment-option
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/Qiww.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/WebManey.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/MasterCard.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/3D Secure.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/SSLsecured.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/VISA.svg")
+    .footer__attention-container
+      .footer__attention-wrap
+        p.footer__attention-text
+          |Компания “Helion Capital” предупреждает: торговля на финансовых рынках
+          |позволяет извлекать неограниченное количество доходности которая, в
+          |свою очередь, несет высокие риски. Спекулятивная торговля с
+          |использованием маржинальных инструментов подходит не для каждого
+          |инвестора, перед началом торговли настоятельно рекомендуем убедиться в
+          |том, что Ваш опыт, размер риска, уровень дохода, свободные средства,
+          |инвестиционные задачи и др. соответствует данному виду деятельности.
+        .footer__img-logotip
+          img.footer__img(src="./img/logoSho.svg")

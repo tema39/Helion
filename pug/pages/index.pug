@@ -1,0 +1,470 @@
+include ../components/head.pug
+
+body
+  header.header
+    .header__logotip
+      img.logotip__img(src="./img/GroupLogotip.svg")
+    .header__info-wrap
+      .header__information
+        ul.info__list
+          li.info__list-item
+            a.info__list-link(href="./about.html") Web-терминал
+          li.info__list-item
+            a.info__list-link(href="./bonus.html") Контакты
+          li.info__list-item.item
+            a.info__list-link(href="") FAQ
+        .authorizations
+          a.authorizations__link(href="") Регистрация
+          a.authorizations__link.enter(href="") Войти
+        .header__call
+          button.header__call-button Перезвоните мне
+          .changing__language
+            button.changing__language-button.ru RU
+            button.changing__language-button.en EN
+      ul.navigation__list
+        li.navigation__list-item
+          h3.navigation__list-title О компании
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Торговля
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Аналитика
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Бонусы
+          button.navigation__list-button
+            img.navigation__list-icon(src="./img/VectorButton2.svg")
+        li.navigation__list-item
+          h3.navigation__list-title Партнерство
+    .header__mobile-wrap  
+      img.header__mobile-icon(src="./img/mobileClick.svg")
+  section.helion
+    .helion__capital-wrap
+      h1.helion__title Helion Capital
+      p.helion__text
+        |Одно из главных преимуществ инвестиционного брокера "Helion Capital" -
+        |гарантированная выплата дивидендов.
+    ul.catigori__finances-list
+      li.catigori__finances-item
+        img.catigori__finances-img(src="./img/GroupItems.svg")
+        h3.catigori__finances-title.title Защита средств
+      li.catigori__finances-item
+        img.catigori__finances-img(src="./img/laptopLaunchItems.svg")
+        h3.catigori__finances-title.title-two Быстрый старт
+      li.catigori__finances-item
+        img.catigori__finances-img(src="./img/imacclickIyems.svg")
+        h3.catigori__finances-title Аналитика рынка
+      li.catigori__finances-item
+        img.catigori__finances-img(src="./img/VectorLupa.svg")
+        h3.catigori__finances-title Аналитика Рынка
+  section.dividends__analytics
+    .dividends__container
+      h2.dividends__title Дивиденды и аналитика
+      p.dividendes__text-mobile 
+        |Одно из главных преимуществ инвестиционного брокера "Helion Capital" - гарантированная выплата дивидендов. Получение стабильного и относительно высокого дохода всегда будет интересно даже самому робкому инвестору.
+      p.dividendes__text-mobile 
+        |Мы проводим ежедневную аналитику данных из Европы и Америки, сотрудничаем с информагентствами Goldman Sachs и располагаем опытным штатом трейдеров, благодаря чему наша аналитическая команда формирует индивидуальные торговые решения для каждого.
+      .dividend__payments-mobile
+        h3.dividend__payments-title До выплаты дивиденда осталось:
+        .dividend__payments__img-wrap
+          img.dividend__payments-img(src="./img/mobileTime.svg")
+        ul.dividend__payments-list
+          li.dividend__payments-item часов
+          li.dividend__payments-item минут
+          li.dividend__payments-item секунд
+        .dividend__payments-inner
+          img.payments__icon(src="./img/mibileEcsplore.svg")
+          p.payments__text Число выданных разрешений на строительство (май), US
+        h3.dividend__title Выплата дивидендов по CFDs 
+        ul.dividend__list
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#PG</span> / Procter&Gamble
+              p.dividend__item-text <span class="gry">One stock:</span> $0.717
+            .dividend__inner-subtext  
+              p.dividend__item-subtext 24 : 08 : 37 :  <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span>$717
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#AAPL</span> / Apple Inc.
+              p.dividend__item-text <span class="gry">One stock:</span> $0.73
+            .dividend__inner-subtext
+              p.dividend__item-subtext 24 : 08 : 37 :  <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span>$730
+          li.dividend__list-item
+            .dividend__inner-text
+              p.dividend__item-text <span class="black">#SBUX  </span>/ Starbuck Corporation
+              p.dividend__item-text <span class="gry">One stock:</span>$0.3
+            .dividend__inner-subtext
+              p.dividend__item-subtext 24 : 08 : 37 : <span class="red">58</span>
+              p.dividend__item-subtext <span class="gry">Payout:</span> $300
+      button.divideand__button ВСЕ КАТЕГОРИИ
+      .dividends__analytics-wrap
+        ul.dividends__list
+          h3.dividends__list-title Дивиденды
+          li.dividends__list-item
+            img.dividends__list-img(src="./img/dividends1.svg")
+            p.dividends__list-text
+              |Одно из главных преимуществ инвестиционного брокера «Helion
+              |Capital» - гарантированная выплата дивидендов.
+          li.dividends__list-item
+            img.dividends__list-img(src="./img/dividendi2.svg")
+            p.dividends__list-text
+              |Удобный калькулятор и календарь дивидендов не позволит Вам
+              |упустить Вашу прибыль
+          li.dividends__list-item
+            img.dividends__list-img(src="./img/dividend3.svg")
+            p.dividends__list-text
+              |Покупайте акции крупных компаний в день экс-дивидендов и
+              |получайте прибыль на свой счет в день выплаты
+        ul.analytics__list
+          h3.analytics__list-title Аналитика
+          li.analytics__list-item
+            img.analytics__list-img(src="./img/analytics1.svg")
+            p.analytics__list-text
+              |Мы проводим ежедневную аналитику данных из Европы и Америки,
+              |сотрудничаем с информагентствами Goldman Sachs
+          li.analytics__list-item
+            img.analytics__list-img(src="./img/analytics2.svg")
+            p.analytics__list-text
+              |Располагаем опытным штатом трейдеров, благодаря чему наша
+              |аналитическая команда формирует торговые решения для каждого.
+          li.analytics__list-item
+            img.analytics__list-img(src="./img/analytics3.svg")
+            p.analytics__list-text
+              |Регистрируйтесь на нашем сайте и получайте самую свежую
+              |аналитику на свою электронную почту еженедельно
+      .special__offer-contianer
+        .special_offer-wrap
+          h2.special__offer-title Специальные предложения
+          a.special__offer-link(href="") ПОДРОБНЕЕ
+        ul.offer__list
+          li.offer__list-item
+            h3.offer__list-title Welcome Bonus
+            p.offer__list-text
+              |Приветственный бонус, который автоматически получают новые
+              |трейдеры при регистрации и пополнении счета. Спустя несколько
+              |транзакций, бонус станет доступным к снятию.
+            .offer__list-subtext
+              p.offer__list-score до 100% на счет
+              a.offer__list-link(href="") Получить
+          li.offer__list-item
+            h3.offer__list-title Test Drive Bonus
+            p.offer__list-text
+              |Получайте реальные 250$ на торговый счет и оттачивайте свои
+              |способности не вкладывая собственных средств! К выводу доступна
+              |только та прибыль, которую вы заработали сверх выданной суммы.
+            .offer__list-subtext
+              p.offer__list-score 250$ на счет
+              a.offer__list-link(href="") Получить
+          li.offer__list-item
+            h3.offer__list-title Проценты на счет
+            p.offer__list-text
+              |Сохраняйте свои средства от инфляции при помощи счета в
+              |иностранной валюте, а так же получайте гарантированную
+              |капитализацию на свой торговый счет от 5% до 16% годовых.
+            .offer__list-subtext
+              p.offer__list-score до 16% на счет
+              a.offer__list-link(href="") Получить
+        button.offer__button Подробнее
+  section.trading__account
+    .account__container
+      .account__title-wrap
+        h2.account__title Торговые счета
+        a.account__link(href="") Подробнее о счетах
+      p.account__subtitle
+        |Откройте тип счета, подходящий под Ваш стиль торговли
+      .trading__style-container
+        ul.score__list
+          li.score__list-item
+            .score__item-title
+              .score__item-img
+                img.score__img(src="./img/silverEblema.svg")
+              .score__title-wrap
+                h3.score__title Silver
+                p.score__title-description
+                  |Универсальный счет, который позволит усовершенствовать
+                  |собственную торговую стратегию.
+            ul.list__item-score
+              li.item Плавающий спред от 3 пунктов
+              li.item Ставка 5% годовых или 0,4% месяц
+              li.item Бесплатное обучение
+              li.item Депозит от 250$
+              li.item Валюта счета : EUR, USD.
+              li.item Защита от отрицательного баланса
+            button.score__button открыть счет
+          li.score__list-item
+            .score__item-title
+              .score__item-img
+                img.score__img(src="./img/Goldemblema.svg")
+              .score__title-wrap
+                h3.score__title Gold
+                p.score__title-description
+                  |Главная особенность данного счета - широчайший выбор
+                  |торговых инстументов.
+            ul.list__item-score
+              li.item Плавающий спред от 2 пунктов
+              li.item Ставка 10% годовых или 0,8% месяц
+              li.item Личный советник 12/5
+              li.item Бесплатное обучение, мастер-классы
+              li.item Депозит от $10 000
+              li.item Валюта счета : EUR, USD.
+            button.score__button открыть счет
+          li.score__list-item
+            .score__item-title
+              .score__item-img
+                img.score__img(src="./img/platinumEmblema.svg")
+              .score__title-wrap
+                h3.score__title Platinum
+                p.score__title-description
+                  |Для требовательных трейдеров предпочитающих комфорт и
+                  |качественное обслуживание
+            ul.list__item-score
+              li.item Плавающий спред от 1 пункта
+              li.item Ставка 16% годовых или 1,33%месяц
+              li.item Личный советник 24/7
+              li.item Бесплатное обучение, мастер-классы
+              li.item Депозит от $50 000
+              li.item Валюта счета : EUR, USD.
+            button.score__button открыть счет
+          li.score__list-item
+            .score__item-title
+              .score__item-img
+                img.score__img(src="./img/platinumEmblema.svg")
+              .score__title-wrap
+                h3.score__title Bitcoin
+                p.score__title-description
+                  |Для требовательных трейдеров предпочитающих комфорт и
+                  |качественное обслуживание
+            ul.list__item-score
+              li.item Плавающий спред от 1 пункта
+              li.item Ставка 16% годовых или 1,33%месяц
+              li.item Личный советник 24/7
+              li.item Бесплатное обучение, мастер-классы
+              li.item Депозит от $50 000
+              li.item Валюта счета : EUR, USD.
+            button.score__button открыть счет
+      .slider__continer-btn
+        button.btn__Next
+          img.btn__icon(src="./img/Vector__Stroke.svg")
+        button.btn__Prev
+          img.btn__icon(src="./img/Vector__Stroke.svg")
+      button.score__mobile-detailed Подробнее
+  section.trading__training
+    .training__container
+      .training__title-wrap
+        h2.training__title Обучение трейдингу
+        a.trading__link(href="") Узнать Подробнее
+      .trading__content-description
+        p.trading__content-text
+          |Самостоятельное изучение торговли на финансовых рынках - всегда
+          |процесс очень кропотливый и длительный, который требует от новичка
+          |достаточно терпения, выдержки и силы воли. Разумеется, много
+          |трейдеров прошли путь самостоятельного обучения трейдингу и сейчас
+          |стабильно зарабатывают деньги на финансовых рынках, но зачем тратить
+          |столько времени впустую? На дворе XXI век - век высоких
+          |информационных технологий, существуют наиболее комфортные и
+          |локаничные методы, которые сэкономят Ваше бесценное время и нервы.
+        .trading__content-img
+          img.trading__img(src="./img/tradingImg.png")
+          img.trading__icon(src="./img/play.svg")
+      p.trading__subtext
+        |Просто подберите для себя подходящий формат обучения: лично в офисе,
+        |дистанционно или групповые мастер классы и вебинары - все остальное мы
+        |сделаем за Вас. Передайте себя в руки профессиональной команды
+        |финансовых советников “Helion Capital” и шаг за шагом мы научим Вас
+        |зарабатывать на финансовых рынках.
+      button.trading__mobile-button  Подробнее
+  section.market__news
+    .market__news-container
+      .market__title-wrap
+        h2.markit__title Новости рынка
+        a.market__link(href="") Больше новостей
+      ul.market__list          
+          li.market__list-item
+            .market__item-icon
+              img.market__icon(src="./img/markerIcon1.svg")
+            .market__content-wrap
+              .market__content
+                h3.market__content-title Фьючерсы
+                p.market__content-text 03.05.18
+              p.market__content-subtext
+                |Фьючерсы на золото и медь упали из за заявления председателя
+                |Федеральной резервной системы Джерома Пауэлла.....
+          li.market__list-item
+            .market__item-icon
+              img.market__icon(src="./img/markerIcon2.svg")
+            .market__content-wrap
+              .market__content
+                h3.market__content-title
+                  |Потребительские расходы в Евросоюзе
+                p.market__content-text 03.05.18
+              p.market__content-subtext
+                |В Евросоюзе опубликовали данные по потребительским расходам к
+                |индексу потребительских цен, а в США годовой ВВП...
+          li.market__list-item
+            .market__item-icon
+              img.market__icon(src="./img/markerIcon3.svg")
+            .market__content-wrap
+              .market__content
+                h3.market__content-title.color Ошибки трейдеров
+                p.market__content-text 03.05.18
+              p.market__content-subtext
+                |Многие трейдеры терпят неудачу на финансовом рынке, так как
+                |допускают ряд ошибок. Давайте рассмотрим некоторые из них!
+          li.market__list-item
+            .market__item-icon
+              img.market__icon(src="./img/markerIcon4.svg")
+            .market__content-wrap
+              .market__content
+                h3.market__content-title Падение торгов
+                p.market__content-text 03.05.18
+              p.market__content-subtext
+                |Среднее количество, ежедневно регистрирующихся торгов
+                |упало,примерно, вдвое по сравнению с декабрьскими...
+      butoon.market__mobile-button Больше Новостей
+  section.company__news
+    .company__news-container
+      .company__news-title
+        h2.news__title Новости компании
+        a.news__link(href="") Больше новостей
+      ul.news__list
+        li.news__list-item
+          .news__img-wrap
+            img.news__img(src="./img/news1.svg")
+          .news__content-wrap
+            h3.news__content-title
+              |Официальные лица вогнали EUR...
+            p.news__content-text
+              |В пятницу, 26 января, единая европейская валюта по отношению к
+              |доллару на утренних торгах умеренно подрастает после небольшой
+              |просадки днем ранее.
+            .news__date-wrap
+              p.news__date 12.05.18
+              a.news__links(href="") Подробнее...
+        li.news__list-item
+          .news__img-wrap
+            img.news__img(src="./img/news2.svg")
+          .news__content-wrap
+            h3.news__content-title
+              |Младший брат Bitcoin - перспек...
+            p.news__content-text
+              |В пятницу, 26 января, единая европейская валюта по отношению к
+              |доллару на утренних торгах умеренно подрастает после небольшой
+              |просадки днем ранее.
+            .news__date-wrap
+              p.news__date 12.05.18
+              a.news__links(href="") Подробнее...
+      ul.mobile__news-list 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news1.svg")
+            .mobile__news_title-wrap 
+              h3.mobile__news-title Официальные лица вогнали EUR...
+              p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+        li.mobile__news-item
+          .mobile__news_img-wrap
+            img.mobile__news_img(src="./img/news2.svg")
+            .mobile__news_title-wrap 
+              h3.mobile__news-title Младший брат Bitcoin - перспек...
+              p.mobile__news-text 12.05.18
+          .mobile__news_subtext-link
+            p.mobile__news-subtext 
+              |В пятницу, 26 января, единая европейская валюта по отношению к доллару на утренних торгах умеренно подрастает после небольшой просадки днем ранее.
+            a.mobile__news-link(href="") Подробнее... 
+      button.mobile__button Больше Новостей
+      .banner__finances-wrap
+        .banner__title-buttons
+          h2.banner__title
+            |Готовы начать зарабатывать на финансовых рынках?
+          h2.banner__title-mobile 
+            |Готовы начать зарабатывать?
+          button.banner__button Открыть счет
+          button.banner__button.banner__button-finances
+            |Открыть Демо-Счет  
+  section.financial__company
+    ul.company__list
+      li.company__list-item
+        a(href="")
+        img.company__item-img(src="./img/logotipHSBC.svg")
+      li.company__list-item
+        a(href="")
+          img.company__item-img(src="./img/LogotipMorgan.svg")
+      li.company__list-item
+        a(href="")
+          img.company__item-img(src="./img/LogotipMufg.svg")
+      li.company__list-item
+        a(href="")
+          img.company__item-img(src="./img/LogotipBarclays.svg")
+      li.company__list-item
+        a(href="")
+          img.company__item-img(src="./img/LogotipUbs.svg")
+  footer.footer
+    .footer__container
+      .footer__logo-wrap
+        img.footer__logo-img(src="./img/LogotipFooter.svg")
+      ul.footer__list
+        li.footer__list-item
+          a.footer__list-link.list__link(href="") О компании
+        li.footer__list-item
+          a.footer__list-link(href="") Аналитика
+        li.footer__list-item
+          a.footer__list-link(href="") Партнерство
+        li.footer__list-item
+          a.footer__list-link(href="") Торговля
+        li.footer__list-item
+          a.footer__list-link(href="") Бонусы
+        li.footer__list-item
+          a.footer__list-link(href="") FAQ
+      ul.footer__conditions-list
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Условия использования сайта
+        li.footer__conditions-item
+          a.footer__conditions-link.conditions-link(href="") Заявление о раскрытии рисков
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Борьба с лег-й преступных доходов
+        li.footer__conditions-item
+          a.footer__conditions-link(href="") Политика конфиденциальности
+      ul.list__payment-option
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/Qiww.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/WebManey.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/MasterCard.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/3D Secure.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/SSLsecured.svg")
+        li.item__payment_option
+          a.link__payment-option(href="")
+            img.img__payment-option(src="./img/VISA.svg")
+    .footer__attention-container
+      .footer__attention-wrap
+        p.footer__attention-text
+          |Компания “Helion Capital” предупреждает: торговля на финансовых рынках
+          |позволяет извлекать неограниченное количество доходности которая, в
+          |свою очередь, несет высокие риски. Спекулятивная торговля с
+          |использованием маржинальных инструментов подходит не для каждого
+          |инвестора, перед началом торговли настоятельно рекомендуем убедиться в
+          |том, что Ваш опыт, размер риска, уровень дохода, свободные средства,
+          |инвестиционные задачи и др. соответствует данному виду деятельности.
+        .footer__img-logotip
+          img.footer__img(src="./img/logoSho.svg")
+  script(src="../../index.js")
+  
+  
+

@@ -1,0 +1,283 @@
+.trading__training {
+  background: #f9f6f2;
+}
+.training__container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  max-width: 1024px;
+  margin: auto;
+
+  .training__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    position: relative;
+
+    .training__title {
+      font-size: 36px;
+      line-height: 53px;
+      color: #43191f;
+      font-family: Milio;
+    }
+    .training__title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 520px;
+      right: 150px;
+      top: 25px;
+      background-color: #d09e70;
+    }
+    .trading__link {
+      text-align: right;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      color: #43191f;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .trading__content-description {
+    display: flex;
+    margin-bottom: 16px;
+    .trading__content-text {
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 500px;
+      margin-right: 23px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .trading__content-img {
+      position: relative;
+
+      .trading__icon {
+        position: absolute;
+        left: 45%;
+        top: 35%;
+      }
+    }
+  }
+  .trading__subtext {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.trading__mobile-button {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto;
+
+    .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative;
+      padding: 0px 10px;
+
+      .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio;
+      }
+      .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 50px;
+        background-color: #F9F6F2;
+      }
+      .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    .trading__content-description {
+      padding: 0px 10px;
+    }
+    .trading__subtext {
+      padding: 0px 10px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto;
+  
+    .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative;
+  
+      .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio;
+      }
+      .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 25px;
+        background-color: #d09e70;
+        display: none;
+      }
+      .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    .trading__content-description {
+      display: flex;
+      margin-bottom: 16px;
+      .trading__content-text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        margin-right: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .trading__content-img {
+        position: relative;
+  
+        .trading__icon {
+          position: absolute;
+          left: 45%;
+          top: 20%;
+        }
+      }
+    }
+    .trading__subtext {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1024px;
+    margin: auto;
+  
+    .training__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+      position: relative;
+  
+      .training__title {
+        font-size: 36px;
+        line-height: 53px;
+        color: #43191f;
+        font-family: Milio;
+      }
+      .training__title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 520px;
+        right: 150px;
+        top: 25px;
+        background-color: #d09e70;
+      }
+      .trading__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #43191f;
+        font-family: Arial, Helvetica, sans-serif;
+        display: none;
+      }
+    }
+    .trading__content-description {
+      display: flex;
+      margin-bottom: 16px;
+      flex-direction: column;
+      .trading__content-text {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        margin-right: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .trading__content-img {
+        position: relative;
+        .trading__img {
+         width: 305px;
+        }
+  
+        .trading__icon {
+          position: absolute;
+          left: 18%;
+          top: 35%;
+        }
+      }
+    }
+    .trading__subtext {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .training__title {
+    border-bottom: 2px solid #D09E70;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .trading__subtext {
+    margin-bottom: 20px;
+  }
+  .trading__mobile-button {
+    display: block;
+    margin: 0px 3%;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #D09E70;
+    background: transparent;
+    border: 2px solid#D09E70;
+    width: 300px;
+    padding: 18px 20px;
+  }
+}

@@ -1,0 +1,86 @@
+.company__news-container {
+  padding: 0px;
+
+  .banner__finances-wrap {
+    background-image: url("../../img/bitmap.png");
+    background-size: cover;
+    height: 250px;
+    margin-bottom: 60px;
+    padding: 15px 15px;
+
+    .banner__title-buttons {
+      border: 1px solid white;
+      padding: 20px 0px 20px 22px;
+      height: 220px;
+
+      .banner__title {
+        font-size: 37px;
+        line-height: 43px;
+        width: 550px;
+        margin-bottom: 30px;
+        color: #ffffff;
+        font-family: Milio;
+      }
+      .banner__button-mobile {
+        font-size: 14px;
+        line-height: 14px;
+        color: #d09e70;
+        background: #ffffff;
+        border: 2px solid white;
+        max-width: 220px;
+        width: 100%;
+        padding: 18px 15px;
+        margin-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner__button-finances-mobile {
+        background: transparent;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .company__news-container {
+    .banner__finances-wrap {
+
+      .banner__title-buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 20px 22px;
+
+        .banner__title {
+          display: none;
+        }
+        .banner__title-mobile {
+          display: block;
+          font-family: Milio;
+          font-size: 26px;
+          line-height: 27px;
+          color: #ffffff;
+          text-align: center;
+          padding-bottom: 18px;
+        }
+        .banner__button-mobile {
+          padding: 18px 15px;
+          margin-bottom: 10px;
+          background: transparent;
+          color: #ffffff;
+          border: 2px solid white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .banner__button-finances-mobile {
+          font-size: 14px;
+          line-height: 14px;
+          color: #d09e70;
+          background: #ffffff;
+          border: 2px solid white;
+          width: 100%;
+          padding: 18px 15px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
